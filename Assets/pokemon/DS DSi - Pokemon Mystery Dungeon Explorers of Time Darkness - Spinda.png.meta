@@ -1,0 +1,3317 @@
+fileFormatVersion: 2
+guid: a61e87ef7d6d13045a9a606559ce8746
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spinda_avatar
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 276
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f3f4df438dc0e42a1b22f0b55af856
+      internalID: -271775507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_1_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 272
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa9b199e756d464394347c336e4bbd6
+      internalID: 1894705159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_1_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 271
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf577607c96b5c14ea447714a3f45729
+      internalID: 794359279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_1_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 271
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7a2541493e3fe499075e70d1e20b17
+      internalID: -1575198890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_1_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 270
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca8f2f575cffd641b3cf54027aeec70
+      internalID: 530092931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_1_5
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 271
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25385a5f92ed11743b1fdab1a0fda040
+      internalID: -656443634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_1_6
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 269
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6c5add07820a4419ae3641edaecce7
+      internalID: -1957302593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_1_7
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 268
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25443ded030b3c428bdf287168ced1a
+      internalID: -922110663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_1_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 274
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ac38260e98a8d4ca135a45b2feadc0
+      internalID: -656317965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_1_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 276
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8187f6a032bc6bf4e9f18bb4f01fd119
+      internalID: 234638786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_1_3
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 274
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76712611a4cfb2943b340f792308df68
+      internalID: 1274922372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_1_1
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 278
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b73d1f622c5a7048b985b0cbf1e1d7a
+      internalID: -419861237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_1_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 273
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae919d5c91da7d47addb06f4fcfcb85
+      internalID: -141097590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_1_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 278
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66023c8ec6bcbe4cb11b40674347762
+      internalID: 2072862791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_1_1
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 273
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503504534d7151845adf719281293f63
+      internalID: 478538428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_1_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 273
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3efebd17bbe32747a07319b3896f3e3
+      internalID: -443896911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_1_3
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 273
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b9ab3b9b1b41245b85bb644249906d
+      internalID: 966595630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_2_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 242
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ccbf3e85f87db4aa6e5532739a271b
+      internalID: -345655713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_2_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 240
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8333eae3ebf2c74a8d110fb26ea97f7
+      internalID: -1124634596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_2_3
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 240
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3021d666de587640812e1153030858e
+      internalID: 1504898291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_2_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 239
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c8995cc7b017f4c9b35e0d06b2c4fc
+      internalID: 1937516740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_2_5
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 239
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400407e94deae5f4ca71307c5be02c0b
+      internalID: 1152184041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_2_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 238
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ded9e382bd50fd42b6559aff5994b9e
+      internalID: 458062216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_2_7
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 237
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09846b7f753e674295566b599a4b237
+      internalID: 1019607749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_2_1
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 245
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89aa4799bc6d4e6448502985fd0b5303
+      internalID: 1815133160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_2_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 244
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33aa9bd35d31a04588d2b225c460fae
+      internalID: -982242911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_2_3
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 242
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87b8a86b0cd7074e8fc0af3a4e30429
+      internalID: -457964434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_2_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 243
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131520493e031a34fae38d8bc68887ed
+      internalID: -653328391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_2_2
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 246
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cb430a7576cb1488b4023635bc11b6
+      internalID: -2042495757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_2_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 245
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f701b5cc7d2b8fc448663eee4dd7a94f
+      internalID: 1295654596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_2_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 242
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8559f978eff46042865fbd3b5339b1e
+      internalID: -537439272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_2_2
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 242
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e320ce15685d3642ab247899b8cf3af
+      internalID: -106929645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_2_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 244
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf75830923ad42f41897acfbc9d131ae
+      internalID: 727511335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_asleep_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 229
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958fcfae6bb56864b982c97be9c932de
+      internalID: 162455554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_asleep_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 229
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c645ca78ffb554b8a0f7427c0f2bd5
+      internalID: 710537609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_3_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 207
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d68219b94243c9479bd94565e9a27e3
+      internalID: 1913976874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_3_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 207
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4e87a6a30805044a29654211333949
+      internalID: -2107132520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_3_3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 206
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9636959e39f94443b52e99077cd2776
+      internalID: 1736427519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_3_4
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 206
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9241c9da58dc440873d8142cfa09bd
+      internalID: -1838841980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_3_5
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 204
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23bebe789ec901648a7541c2b98bf4e7
+      internalID: 611608184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_3_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 204
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ac704e01a2bf349b2f97aabebefbeb
+      internalID: -1810972302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_3_1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 210
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c408fba471f7c2643989b1dc2cfa4f5f
+      internalID: 1742818670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_3_2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 211
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e93d29aa0d82240963beff51d2cca6
+      internalID: 378683138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_3_3
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 211
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f312adeacd2d8474f95eefccdcdff6f8
+      internalID: 601604417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_3_1
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 213
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4790d16ed2dd94943b9ada32f19c86ef
+      internalID: 1072062289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_3_2
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 211
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a98d7a394d0dd045b331f22f39f0fc5
+      internalID: -448301657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_3_3
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 213
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988d8270c364fbd4ba9907245d3b12ec
+      internalID: 27288787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_3_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 210
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259e3c818f9fb0740be33a6e29e2e1c4
+      internalID: -1336559936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_3_2
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 209
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146638870240bba4882eb31649c78677
+      internalID: -2012620775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_3_3
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 209
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a320c0461f76074893727cb527331a9
+      internalID: -688395009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_3_7
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 203
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f9c7cd477f33c4c89c4f778b4c8b9b
+      internalID: 1539135744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_4_1
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 177
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519f1f85885bfff4ca8842a94218db9e
+      internalID: -560633359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_4_2
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 177
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01efde8aeff73834bb16a1d57e47e02a
+      internalID: 2089342062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_4_3
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 177
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227298b4d7974544d8be2622ed049be4
+      internalID: -475592768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_4_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 178
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cf303941ea06e49828b5147790208d
+      internalID: -1742150708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_hurt_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 174
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be5b71b3afa1634fac2186e289fe05b
+      internalID: -2002210350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_hurt_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 176
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3c58ed973c81e43a9fc733f4d1f189
+      internalID: -1751493172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_4_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 171
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0841314b407d54f439a943f2a28dec68
+      internalID: -1603446959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_4_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 171
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483a888022b4cf04bac54bbb95ec098e
+      internalID: 1305677928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_4_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 170
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7d396f8bcd5fd45a4ef834c6b6649f
+      internalID: 1729794451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_4_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 170
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b192d98dac4c71640be0d3f2838b01b9
+      internalID: -1332254955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_4_5
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 165
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15cb22ad94defc46abb5cb39c2347cf
+      internalID: -325722215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_4_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 166
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529b58f8eaddb1a49ad485421d1babd5
+      internalID: 1327012211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_4_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 166
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024474a567533ff4da8ebbef2a1479a1
+      internalID: 131352821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_4_1
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 181
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bb37cf5dffaa84c97d70b684873d58
+      internalID: -1813076809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_4_3
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 181
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ce2c3a3d2fdc24d9332c87ac029bbf
+      internalID: -1117688484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_4_1
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 174
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2e64b4dd00cec4e844e71f4f984ba7
+      internalID: 57594595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_4_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 176
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdc24f64aa2ebc4fa3294b05c3cd281
+      internalID: -1559286359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_4_3
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 174
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b859e9cf980d2c42ab34c561a2d6ace
+      internalID: -30894622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_hurt_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 145
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9d5f551d8bee845875af35bbf863e6
+      internalID: 137831361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_hurt_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 145
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a80262464fe55e4881a6f9f99eea234
+      internalID: 136104575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_5_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 134
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42854adfa3b2597428a177a04b0a2530
+      internalID: 1595160624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_5_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 133
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42676eba2cafe5b4f9fbac07cdceed35
+      internalID: 816805585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_5_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 134
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a28e857a3035c4f997a7fa3dab910b
+      internalID: 924137822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_5_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 137
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673b841f745c8114db35d7851826932f
+      internalID: -1576125447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_5_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 135
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf293aa68bc8224aae4067aae9c1be5
+      internalID: -617694239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_5_6
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 135
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4990d870e397c7c43ae37abaef537c6b
+      internalID: -1064829725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_5_7
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 134
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6518b330abbfb14792bd23c39c9ba79
+      internalID: 2029689850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_5_1
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 144
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6ca2cacd341cc44b0699bab0935eb7
+      internalID: 755468720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_5_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 143
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7a63fe75884c74d94dc816d0c1ead1
+      internalID: -1681159772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_5_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 143
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8404acdddaff64dad4501e1a59742d
+      internalID: 330019161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_5_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 148
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afec7aa09d684cf449c591dc33a8611e
+      internalID: -1320470388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_5_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 146
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c15c386e9ad2e4fbdfe8ee848195ea
+      internalID: -1290162305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_5_3
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 148
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fe30b7006caf74b9940c9f85e2ed4f
+      internalID: -549486733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_5_1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 140
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc46d2b8fe65dc48be55f4444d6a41f
+      internalID: -1764802958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_5_2
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 142
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabc8a732d60e6d4db345d73c24186c5
+      internalID: -399082365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_5_3
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 142
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d9402e0e715234782bf7a13fef9ed8
+      internalID: 1313733327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_hurt_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 114
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7aeca0bb03dc8e4ca39efb2d7f7cd73
+      internalID: 900412889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_hurt_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 115
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5490b44244c260d4082bbfa058731363
+      internalID: 371429000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_6_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 100
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6fd25b8caab6f4d944f1e1351b00b3
+      internalID: -774392869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_6_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 101
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fadfc89f508a3b45ace5433fa17a0ec
+      internalID: 969397575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_6_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 100
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07390f01c034ea546a57b8d0b92b02b2
+      internalID: -1874050375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_6_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 97
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21978618925025f4982ba4836ce69776
+      internalID: 454427856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_6_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 98
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b17662f7bd8cc4469df7f842eb462b8
+      internalID: -1251386805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_6_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 96
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35af3497753158e478dd394ea84ef332
+      internalID: 20304817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_6_7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 96
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dace209453865674e8c92ab90c2e01dc
+      internalID: 526768666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_6_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 112
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab2276b2e4480249be8c87b779ead02
+      internalID: 347204667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_6_2
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 111
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75cef584499cf1429f280b2d6620b5e
+      internalID: -385674017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_6_3
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 111
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f45b0990c1fea41ad018780a7b7a86
+      internalID: -78937759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_6_1
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 120
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5817da477318eee4eb0113136a18f9cf
+      internalID: -1402246426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_6_2
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 113
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00a4490a6b0e2547abc338d687939ad
+      internalID: 2085843459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_6_3
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 121
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28aea59ccf33793408adfbfeac1e0fc8
+      internalID: 174573596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_6_1
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 108
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8dad6b678be0d49bf1d8b119045f74
+      internalID: 225098651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_6_2
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 105
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a6b804b7867c048aaac0997ce9f178
+      internalID: 1439520335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_6_3
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 105
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498f93bd5af32d248bc5145783483942
+      internalID: -1761116119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_hurt_7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 86
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fb340109fa2c943be33ef13b43b546
+      internalID: 672017018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_hurt_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 88
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0d049db19225d40a348881d7f1db24
+      internalID: 340504757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_7_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 66
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba98087c42f33f439d107afc4911c0b
+      internalID: -212783947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_7_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 66
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307bed5cd4b86834282d571cb53016bb
+      internalID: 532820923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_7_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 65
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5ed58ebfa9cc34e991f8e75df681ee
+      internalID: -250704018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_7_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 65
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b860d7d9a5f6b4b8082ce359e444e8
+      internalID: -2035233418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_7_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 81
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55cc98e35f94804e9f7f38daf9a3cd6
+      internalID: 203303225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_7_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 81
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb28b2bb7c288044f92b3a7bc49d6626
+      internalID: -1610545146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_7_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 81
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ac77bf5daa17c479b47581402b801c
+      internalID: 1055795890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_7_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 85
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c8ce04d4b33a94f9f3a61822b9f2a4
+      internalID: -2134201437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_7_2
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 84
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7699d4e67a1124db7af591d488d741
+      internalID: -2085755300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_7_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 84
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7565b1e626047ff4a9e624b8a458a034
+      internalID: 278431209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_7_1
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 75
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce4736a30d28b945b2aab67360e19ae
+      internalID: -821385453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_7_2
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 73
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9931ac3b36b8d9e4c87fa3ebb287d9d5
+      internalID: 795066833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_7_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 74
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e010554fca454e49b2e0dff2ffaef07
+      internalID: 711358620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_7_5
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 61
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce59823f14820248baa507b079cc3f4
+      internalID: 1802646654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_7_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 61
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c90467f9ef80d144b6cba09bdec4edf
+      internalID: 2136413720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_7_7
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 61
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d75e76ca59d18a449527e1a6c94771e
+      internalID: -526531137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_8_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 49
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f031dd39d988a458f59ea8c8ee3ddd
+      internalID: 1527536292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_8_2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 49
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c11869400436e146ac1af938b51fdf6
+      internalID: 840647099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_move_8_3
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 50
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d2efc39790f954f96f737b19bd4d83
+      internalID: -1427991305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_8_1
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 53
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd63bdd4508bec746ae058320d0cc0b0
+      internalID: 963386420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_8_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 52
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558357a6f5515f74d85e8bfb905ca27e
+      internalID: 1892854262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_attack_8_3
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 51
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d251e0fdb121e145ad3719add9a3540
+      internalID: -1316863893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_8_1
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 42
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8482c57a7acc0084895b81d2f882479d
+      internalID: 1763586576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_8_2
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 41
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982497a00e9f6bf47b0f92f432b61f8a
+      internalID: 1872777293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_special_8_3
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 43
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6978581f1c3adcf4bbbb966855a8df6c
+      internalID: 40142237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_8_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 31
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9df47c990ffb348b351c8e73d0021f
+      internalID: 1391227227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_8_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 32
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4351c096ff4605346851c633604f4706
+      internalID: -541689789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_8_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 30
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89aa625837bbe444ca3fb352bc1272b8
+      internalID: -249853620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_8_4
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 31
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0872dc7742ef57439653c575fe29ac1
+      internalID: -1564751602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_8_5
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 26
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd9d7f45bc4cc0488f3be48bae2e248
+      internalID: -1110654199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_8_6
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 26
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88705da157fb0994693ab51352fa0d98
+      internalID: 1255896966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_idle_8_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 27
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6451788e7eb6cb44199eb9edf6a50d85
+      internalID: -104258533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spinda_hurt_0
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 155
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c3d06737f78234993572fa0e00fca8
+      internalID: -300293610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_10: 1606889608
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_11: 1977445771
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_12: 439807455
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_13: 120176136
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_14: -1714826355
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_140: -2074816426
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_141: -1149870686
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_142: 1937462770
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_15: -1707415423
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_155: 2046373077
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_156: -2035549850
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_164: 290894756
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_165: 1633870694
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_166: -551940407
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_167: -689526334
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_168: -542064223
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_169: 84059839
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_170: -113296635
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_171: -579890454
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_172: 1593179698
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_173: 3696485
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_174: -1515901249
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_175: -558857825
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_176: -671603644
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_177: 1410656052
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_178: 627649547
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_179: -1368558069
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_180: 533078839
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_181: -374963577
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_182: -256029015
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_183: 866603115
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_184: -157278078
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_2: -1024751870
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_3: 990855690
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_32: -865744925
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_33: 735928254
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_34: 2027442011
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_4: 1659159984
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_5: -174654919
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_6: 117876302
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_68: 951034903
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_69: -502481170
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_7: -1596602723
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_8: 1683214304
+      DS DSi - Pokemon Mystery Dungeon Explorers of Time Darkness - Spinda_9: -1413675906
+      Spinda_asleep_1: 162455554
+      Spinda_asleep_2: 710537609
+      Spinda_attack_1_1: -419861237
+      Spinda_attack_1_2: -141097590
+      Spinda_attack_1_3: 2072862791
+      Spinda_attack_2_1: -653328391
+      Spinda_attack_2_2: -2042495757
+      Spinda_attack_2_3: 1295654596
+      Spinda_attack_3_1: 1072062289
+      Spinda_attack_3_2: -448301657
+      Spinda_attack_3_3: 27288787
+      Spinda_attack_4_1: -1813076809
+      Spinda_attack_4_2: -1742150708
+      Spinda_attack_4_3: -1117688484
+      Spinda_attack_5_1: -1320470388
+      Spinda_attack_5_2: -1290162305
+      Spinda_attack_5_3: -549486733
+      Spinda_attack_6_1: -1402246426
+      Spinda_attack_6_2: 2085843459
+      Spinda_attack_6_3: 174573596
+      Spinda_attack_7_1: -2134201437
+      Spinda_attack_7_2: -2085755300
+      Spinda_attack_7_3: 278431209
+      Spinda_attack_8_1: 963386420
+      Spinda_attack_8_2: 1892854262
+      Spinda_attack_8_3: -1316863893
+      Spinda_avatar: -271775507
+      Spinda_hurt_0: -300293610
+      Spinda_hurt_1: -2002210350
+      Spinda_hurt_2: -1751493172
+      Spinda_hurt_3: 137831361
+      Spinda_hurt_4: 136104575
+      Spinda_hurt_5: 900412889
+      Spinda_hurt_6: 371429000
+      Spinda_hurt_7: 672017018
+      Spinda_hurt_8: 340504757
+      Spinda_idle_1_1: 1894705159
+      Spinda_idle_1_2: 794359279
+      Spinda_idle_1_3: -1575198890
+      Spinda_idle_1_4: 530092931
+      Spinda_idle_1_5: -656443634
+      Spinda_idle_1_6: -1957302593
+      Spinda_idle_1_7: -922110663
+      Spinda_idle_2_1: -345655713
+      Spinda_idle_2_2: -1124634596
+      Spinda_idle_2_3: 1504898291
+      Spinda_idle_2_4: 1937516740
+      Spinda_idle_2_5: 1152184041
+      Spinda_idle_2_6: 458062216
+      Spinda_idle_2_7: 1019607749
+      Spinda_idle_3_1: 1913976874
+      Spinda_idle_3_2: -2107132520
+      Spinda_idle_3_3: 1736427519
+      Spinda_idle_3_4: -1838841980
+      Spinda_idle_3_5: 611608184
+      Spinda_idle_3_6: -1810972302
+      Spinda_idle_3_7: 1539135744
+      Spinda_idle_4_1: -1603446959
+      Spinda_idle_4_2: 1305677928
+      Spinda_idle_4_3: 1729794451
+      Spinda_idle_4_4: -1332254955
+      Spinda_idle_4_5: -325722215
+      Spinda_idle_4_6: 1327012211
+      Spinda_idle_4_7: 131352821
+      Spinda_idle_5_1: 1595160624
+      Spinda_idle_5_2: 816805585
+      Spinda_idle_5_3: 924137822
+      Spinda_idle_5_4: -1576125447
+      Spinda_idle_5_5: -617694239
+      Spinda_idle_5_6: -1064829725
+      Spinda_idle_5_7: 2029689850
+      Spinda_idle_6_1: -774392869
+      Spinda_idle_6_2: 969397575
+      Spinda_idle_6_3: -1874050375
+      Spinda_idle_6_4: 454427856
+      Spinda_idle_6_5: -1251386805
+      Spinda_idle_6_6: 20304817
+      Spinda_idle_6_7: 526768666
+      Spinda_idle_7_1: -212783947
+      Spinda_idle_7_2: 532820923
+      Spinda_idle_7_3: -250704018
+      Spinda_idle_7_4: -2035233418
+      Spinda_idle_7_5: 1802646654
+      Spinda_idle_7_6: 2136413720
+      Spinda_idle_7_7: -526531137
+      Spinda_idle_8_1: 1391227227
+      Spinda_idle_8_2: -541689789
+      Spinda_idle_8_3: -249853620
+      Spinda_idle_8_4: -1564751602
+      Spinda_idle_8_5: -1110654199
+      Spinda_idle_8_6: 1255896966
+      Spinda_idle_8_7: -104258533
+      Spinda_move_1_1: -656317965
+      Spinda_move_1_2: 234638786
+      Spinda_move_1_3: 1274922372
+      Spinda_move_2_1: 1815133160
+      Spinda_move_2_2: -982242911
+      Spinda_move_2_3: -457964434
+      Spinda_move_3_1: 1742818670
+      Spinda_move_3_2: 378683138
+      Spinda_move_3_3: 601604417
+      Spinda_move_4_1: -560633359
+      Spinda_move_4_2: 2089342062
+      Spinda_move_4_3: -475592768
+      Spinda_move_5_1: 755468720
+      Spinda_move_5_2: -1681159772
+      Spinda_move_5_3: 330019161
+      Spinda_move_6_1: 347204667
+      Spinda_move_6_2: -385674017
+      Spinda_move_6_3: -78937759
+      Spinda_move_7_1: 203303225
+      Spinda_move_7_2: -1610545146
+      Spinda_move_7_3: 1055795890
+      Spinda_move_8_1: 1527536292
+      Spinda_move_8_2: 840647099
+      Spinda_move_8_3: -1427991305
+      Spinda_special_1_1: 478538428
+      Spinda_special_1_2: -443896911
+      Spinda_special_1_3: 966595630
+      Spinda_special_2_1: -537439272
+      Spinda_special_2_2: -106929645
+      Spinda_special_2_3: 727511335
+      Spinda_special_3_1: -1336559936
+      Spinda_special_3_2: -2012620775
+      Spinda_special_3_3: -688395009
+      Spinda_special_4_1: 57594595
+      Spinda_special_4_2: -1559286359
+      Spinda_special_4_3: -30894622
+      Spinda_special_5_1: -1764802958
+      Spinda_special_5_2: -399082365
+      Spinda_special_5_3: 1313733327
+      Spinda_special_6_1: 225098651
+      Spinda_special_6_2: 1439520335
+      Spinda_special_6_3: -1761116119
+      Spinda_special_7_1: -821385453
+      Spinda_special_7_2: 795066833
+      Spinda_special_7_3: 711358620
+      Spinda_special_8_1: 1763586576
+      Spinda_special_8_2: 1872777293
+      Spinda_special_8_3: 40142237
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
