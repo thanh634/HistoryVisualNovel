@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d45a072828e7b4e9541f9f7525a5b7, type: 3}
+  m_Name: Dialogue System Configuration
+  m_EditorClassIdentifier: 
+  CharacterConfigurationAsset: {fileID: 11400000, guid: 663273af67e49f8429b61edc7f300855, type: 2}
+  defaultColor: {r: 0, g: 0, b: 0, a: 1}
+  defaultFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
