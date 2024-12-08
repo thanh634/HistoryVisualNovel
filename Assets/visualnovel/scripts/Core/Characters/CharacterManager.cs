@@ -1,4 +1,4 @@
-using Dialogue;
+using DIALOGUE;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,8 +30,16 @@ namespace CHARACTER
             instance = this;
         }
 
-        public CharacterConfigData GetCharacterConfig(string name)
+        public CharacterConfigData GetCharacterConfig(string name, bool getOriginal = false)
         {
+            if(!getOriginal)
+            {
+                Character character = GetCharacter(name);
+                if (character != null)
+                    return character.config;
+
+            }
+
             return config.GetConfig(name);
         }
 

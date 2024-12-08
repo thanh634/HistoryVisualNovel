@@ -18,7 +18,7 @@ public class TextArchitect
     public string fullTargetText => preText + targetText;
 
     public enum BuildMethod { instant, typewriter, fade}
-    public BuildMethod buildMethod = BuildMethod.typewriter;
+    public BuildMethod buildMethod = BuildMethod.fade;
 
     public Color textColor { get { return tmpro.color; } set { tmpro.color = value; } }
 

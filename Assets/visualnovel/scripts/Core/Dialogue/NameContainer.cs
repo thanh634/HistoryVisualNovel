@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace Dialogue
+namespace DIALOGUE
 {
     [System.Serializable]
     public class NameContainer
@@ -25,6 +25,8 @@ namespace Dialogue
 
         public void SetNameColor(Color color) => nameText.color = color;
         public void SetNameFont(TMP_FontAsset font) => nameText.font = font;
+
+        public void SetNameFontSize(float size) => nameText.fontSize = size;    
     }
 }
 

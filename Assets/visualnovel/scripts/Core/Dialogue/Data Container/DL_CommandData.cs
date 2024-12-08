@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using static Unity.Burst.Intrinsics.X86.Avx;
 
-namespace Dialogue
+namespace DIALOGUE
 {
     public class DL_CommandData
     {
@@ -35,9 +36,9 @@ namespace Dialogue
                 int index = cmd.IndexOf(ARGUMENTS_CONTAINER_ID);
                 command.name = cmd.Substring(0, index).Trim();
 
-                if (command.name.ToLower().StartsWith(WAITCOMMAND_ID))
+                if (command.name.ToLower().StartsWith(WAITCOMMAND_ID) || command.name.ToLower() == "wait")
                 {
-                    command.name = command.name.Substring(WAITCOMMAND_ID.Length);
+                    command.name = command.name.ToLower() == "wait" ? command.name : command.name.Substring(WAITCOMMAND_ID.Length);
                     command.waitForCompletion = true;
                 }
                 else

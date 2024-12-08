@@ -69,11 +69,11 @@ namespace COMMANDS
             // LOGIC
 
             // Grabbing graphic
-            pathToGraphic = GetPathToGraphic(FilePath.resources_backgroundImages, mediaName);
+            pathToGraphic = FilePath.GetPathToResource(FilePath.resources_backgroundImages, mediaName);
             graphic = Resources.Load<Texture>(pathToGraphic);
             if(graphic == null)
             {
-                pathToGraphic = GetPathToGraphic(FilePath.resources_backgroundVideos, mediaName);
+                pathToGraphic = FilePath.GetPathToResource(FilePath.resources_backgroundVideos, mediaName);
                 graphic = Resources.Load<VideoClip>(pathToGraphic);
             }
             if(graphic == null)
@@ -150,13 +150,5 @@ namespace COMMANDS
 
         }
 
-
-        private static string GetPathToGraphic(string defaultPath, string graphicName)
-        {
-            if(graphicName.StartsWith(HOME_DIRECTORY_SYMBOL))
-                return graphicName.Substring(HOME_DIRECTORY_SYMBOL.Length);
-
-            return defaultPath + graphicName;
-        }
     }
 }

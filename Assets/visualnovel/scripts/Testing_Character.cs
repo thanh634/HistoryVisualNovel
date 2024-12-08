@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CHARACTER;
-using Dialogue;
+using DIALOGUE;
 
 namespace TESTING
 {

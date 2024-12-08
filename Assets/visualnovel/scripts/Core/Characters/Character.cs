@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Dialogue;
+using DIALOGUE;
 using UnityEditor.Profiling.Memory.Experimental;
 using TMPro;
 
@@ -76,13 +76,13 @@ namespace CHARACTER
         public void SetDialogueColor(Color color) => config.dialogueColor = color;
         public void SetNameFont(TMP_FontAsset font) => config.nameFont = font;
         public void SetDialogueFont(TMP_FontAsset font) => config.dialogueFont = font;
-        public void ResetConfigurationData() => config = CharacterManager.instance.GetCharacterConfig(name);
+        public void ResetConfigurationData() => config = CharacterManager.instance.GetCharacterConfig(name, getOriginal : true);
         public void UpdateTextCustomizationOnScreen() => dialogueSystem.ApplySpeakerDataToDialogueContainer(config);
 
         public virtual Coroutine Show(float speedMultiplier = 1f)
         {
             if (isRevealing)
-                return co_revealing;
+                charManager.StopCoroutine(co_revealing);
             
             if(isHiding)
                 charManager.StopCoroutine(co_hiding);
@@ -96,7 +96,7 @@ namespace CHARACTER
         public virtual Coroutine Hide(float speedMultiplier = 1f)
         {
             if (isHiding)
-                return co_hiding;
+                charManager.StopCoroutine(co_hiding);
 
             if (isRevealing)
                 charManager.StopCoroutine(co_revealing);
@@ -201,10 +201,7 @@ namespace CHARACTER
 
         public Coroutine Highlight(float speed = 1f, bool immediate = false)
         {
-            if (isHighlighting)
-                return co_highlighting;
-
-            if (isUnHighlighting)
+            if (isHighlighting || isUnHighlighting)
                 charManager.StopCoroutine(co_highlighting);
 
             isHighlighted = true;
@@ -215,10 +212,7 @@ namespace CHARACTER
 
         public Coroutine UnHighlight(float speed = 1f, bool immediate = false)
         {
-            if (isUnHighlighting)
-                return co_highlighting;
-
-            if (isHighlighting)
+            if (isUnHighlighting || isHighlighting)
                 charManager.StopCoroutine(co_highlighting);
 
             isHighlighted = false;

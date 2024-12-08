@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Dialogue
+namespace DIALOGUE
 {
     public class ConversationManager
     {
@@ -14,19 +14,40 @@ namespace Dialogue
         private Coroutine process = null;
         public bool isRunning => process != null;
 
-        private TextArchitect architect = null;
+        public TextArchitect architect = null;
         private bool userPrompt = false;
+
+        private TagManager tagManager;
 
         public ConversationManager(TextArchitect architect) 
         {
             this.architect = architect;
             dialogueSystem.onUserPrompt_Next += OnUserPrompt_Next;
+
+            tagManager = new TagManager();
+            //logicalLineManager = new LogicalLineManager();
+            //conversationQueue = new ConversationQueue();
         }
+
+        //public void Enqueue(Conversation conversation) => conversationQueue.Enqueue(conversation);
+        //public void EnqueuePriority(Conversation conversation) => conversationQueue.EnqueuePriority(conversation);
 
         private void OnUserPrompt_Next()
         {
             userPrompt = true;
         }
+
+        //public Coroutine StartConversation(Conversation conversation)
+        //{
+        //    StopConversation();
+        //    conversationQueue.Clear();
+
+        //    Enqueue(conversation);
+
+        //    process = dialogueSystem.StartCoroutine(RunningConversation());
+
+        //    return process;
+        //}
 
         public Coroutine StartConversation(List<string> conversation)
         {
@@ -79,6 +100,9 @@ namespace Dialogue
             //else
             //    dialogueSystem.HideSpeakerName();
 
+            if (!dialogueSystem.dialogueContainer.isVisible)
+                dialogueSystem.dialogueContainer.Show();
+
             //Build Dialogue
             yield return BuildLineSegments(line.dialogueData);
         }
@@ -95,7 +119,7 @@ namespace Dialogue
             }
 
 
-            dialogueSystem.ShowSpeakerName(speakerData.displayName);
+            dialogueSystem.ShowSpeakerName(tagManager.Inject(speakerData.displayName));
 
             DialogueSystem.instance.ApplySpeakerDataToDialogueContainer(speakerData.name);
             Debug.Log($"{speakerData.displayName}, {speakerData.castPosition}, {speakerData.CastExpression}");
@@ -126,6 +150,7 @@ namespace Dialogue
 
         }
 
+        public bool isWaitingOnAutoTimer { get; private set; } = false;
         IEnumerator WaitForDialogueSegmentSignalToBeTriggered(DL_DialogueData.DIALOGUE_SEGMENT segment)
         {
             switch(segment.startSignal)
@@ -136,7 +161,9 @@ namespace Dialogue
                     break;
                 case DL_DialogueData.DIALOGUE_SEGMENT.StartSignal.WC:
                 case DL_DialogueData.DIALOGUE_SEGMENT.StartSignal.WA:
+                    isWaitingOnAutoTimer = true;
                     yield return new WaitForSeconds(segment.signalDelay);
+                    isWaitingOnAutoTimer = false;
                     break;
                 default:
                     break;
@@ -170,6 +197,7 @@ namespace Dialogue
 
         IEnumerator BuildDialogue(string dialogue, bool append = false)
         {
+            dialogue = tagManager.Inject(dialogue);
             //Build Dialogue
             if(!append)
                 architect.Build(dialogue);
@@ -195,10 +223,14 @@ namespace Dialogue
 
         IEnumerator WaitForUserInput()
         {
+            dialogueSystem.prompt.Show();
             while(!userPrompt)
                 yield return null;
 
+            dialogueSystem.prompt.Hide();
             userPrompt = false;
         }
+
+
     }
 }

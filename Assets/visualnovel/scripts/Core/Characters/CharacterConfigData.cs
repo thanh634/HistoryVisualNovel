@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using Dialogue;
+using DIALOGUE;
 
 namespace CHARACTER
 {
@@ -19,6 +19,9 @@ namespace CHARACTER
         public TMP_FontAsset nameFont;
         public TMP_FontAsset dialogueFont;
 
+        public float nameFontSize;
+        public float dialogueFontSize;
+
         public CharacterConfigData Copy()
         {
             CharacterConfigData result = new CharacterConfigData();
@@ -32,6 +35,9 @@ namespace CHARACTER
 
             result.nameFont = nameFont;
             result.dialogueFont = dialogueFont;
+
+            result.nameFontSize = nameFontSize;
+            result.dialogueFontSize = dialogueFontSize;
 
             return result;
         }
@@ -53,6 +59,9 @@ namespace CHARACTER
 
                 result.nameFont = defaultFont;
                 result.dialogueFont = defaultFont;
+
+                result.nameFontSize = DialogueSystem.instance.config.defaultNameFontSize;
+                result.dialogueFontSize = DialogueSystem.instance.config.defaultDialogueFontSize;
 
                 return result;
             }

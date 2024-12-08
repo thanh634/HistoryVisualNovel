@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Dialogue;
+using DIALOGUE;
 
 namespace TESTING
 {
@@ -35,6 +35,15 @@ namespace TESTING
             */
 
             DialogueSystem.instance.Say(lines);
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+                DialogueSystem.instance.dialogueContainer.Hide();
+
+            else if (Input.GetKeyDown(KeyCode.UpArrow))
+                DialogueSystem.instance.dialogueContainer.Show();
         }
     }
 }

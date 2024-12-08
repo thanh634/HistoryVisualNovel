@@ -20,6 +20,8 @@ MonoBehaviour:
     dialogueColor: {r: 0, g: 0, b: 0, a: 1}
     nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
     dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
   - name: Linh Dai Viet
     alias: Linh
     characterType: 1
@@ -27,6 +29,8 @@ MonoBehaviour:
     dialogueColor: {r: 0, g: 0, b: 0, a: 1}
     nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
     dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
   - name: Linh Nguyen Mong
     alias: Dich
     characterType: 1
@@ -34,6 +38,8 @@ MonoBehaviour:
     dialogueColor: {r: 0, g: 0, b: 0, a: 1}
     nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
     dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
   - name: Tran Hung Dao
     alias: Hung Dao Vuong
     characterType: 1
@@ -41,3 +47,5 @@ MonoBehaviour:
     dialogueColor: {r: 0, g: 0, b: 0, a: 1}
     nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
     dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
