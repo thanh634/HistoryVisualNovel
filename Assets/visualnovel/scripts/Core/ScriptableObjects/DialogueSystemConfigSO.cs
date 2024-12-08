@@ -2,7 +2,7 @@ using UnityEngine;
 using CHARACTER;
 using TMPro;
 
-namespace Dialogue
+namespace DIALOGUE
 {
     [CreateAssetMenu(fileName = "Dialogue System Configuration", menuName = "Dialogue System/Dialogue Configuration Asset")]
 
@@ -11,6 +11,10 @@ namespace Dialogue
         public CharacterConfigSO CharacterConfigurationAsset;
 
         public Color defaultColor = Color.black;
-        public TMP_FontAsset defaultFont; 
+        public TMP_FontAsset defaultFont;
+
+        public float dialogueFontScale = 1f;
+        public float defaultNameFontSize = 50f;
+        public float defaultDialogueFontSize = 35f;
     }
 }

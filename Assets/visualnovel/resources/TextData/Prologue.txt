@@ -1,8 +1,22 @@
-[wait]Wait(1)
 
+HideUI(-i true)
+
+HideDB()
+
+Wait(1)
+
+PlayAmbience(RainyMood)
+
+[wait]ShowUI(-spd 0.5)
+
+
+playsfx(thunder_strong_01 -p 0.5)
 SetLayerMedia(background Nebula), SetLayerMedia(background -l 1 SpaceshipInterior)
 
-[wait]Wait(1), CreateCharacter("tuong as Tran Hung Dao"), CreateCharacter("linh1 as Linh Dai Viet"), CreateCharacter("linh2 as Linh Nguyen Mong")
+Wait(1)
+CreateCharacter("tuong as Tran Hung Dao"), CreateCharacter("linh1 as Linh Dai Viet"), CreateCharacter("linh2 as Linh Nguyen Mong")
+
+PlaySong("Calm2")
 
 [wait]Show(tuong linh1 linh2 -spd 0.1)
 
@@ -17,13 +31,16 @@ Wait(1)
 Wait(1)
 
 Hide(linh1 linh2 -spd 0.1)
-
+ClearLayerMedia(background -b hurricane), wait(1)
 Narrator "Showing characters."
-
+SetLayerMedia(background cave -b hypno)
 tuong.UnHighlight()
+StopSong(), StopAmbience()
+stopsfx(thunder_strong_01)
 
+ShowDB()
 
-enter Tran Nhan Tong "Trần Hưng Đạo (1228 – 1300) (tên thật là Trần Quốc Tuấn, tước hiệu Hưng Đạo đại vương) là một nhà chính trị, nhà quân sự, tôn thất hoàng gia Đại Việt thời Trần."
+enter Tran Nhan Tong "<vua> - Trần Hưng Đạo (1228 – 1300) (tên thật là Trần Quốc Tuấn, tước hiệu Hưng Đạo đại vương) là một nhà chính trị, nhà quân sự, tôn thất hoàng gia Đại Việt thời Trần."
 
 "Sau khi qua đời dân gian đã suy tôn ông thành Đức Thánh Trần hay còn gọi là Cửu Thiên Vũ Đế.{a} Ông được biết đến trong lịch sử Việt Nam với việc chỉ huy quân đội đánh tan hai cuộc xâm lược của quân Nguyên – Mông năm 1285 và năm 1288."
 

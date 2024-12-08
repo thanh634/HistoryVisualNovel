@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace Dialogue
+namespace DIALOGUE
 {
     public class DialogueParser
     {

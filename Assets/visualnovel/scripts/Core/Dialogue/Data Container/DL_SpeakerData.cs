@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace Dialogue
+namespace DIALOGUE
 {
     public class DL_SpeakerData
     {
