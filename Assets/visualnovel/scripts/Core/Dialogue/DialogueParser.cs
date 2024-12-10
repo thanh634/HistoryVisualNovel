@@ -16,7 +16,7 @@ namespace DIALOGUE
 
             Debug.Log($"Speaker = '{speaker}'\nDialogue = '{dialogue}'\nCommands = '{commands}'");
 
-            return new DialogueLine(speaker, dialogue, commands);
+            return new DialogueLine(rawLine, speaker, dialogue, commands);
 
         }
 

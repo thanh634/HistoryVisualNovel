@@ -9,16 +9,35 @@ PlayAmbience(RainyMood)
 
 [wait]ShowUI(-spd 0.5)
 
+narrator "What is your name ?"
 
-playsfx(thunder_strong_01 -p 0.5)
+input "Type your name:"
+
+narrator "Hello <input>"
+CreateCharacter("tuong as Tran Hung Dao")
+
+choice "What side are you on?"
+{
+	-VietNam
+		Tran Hung Dao "I love Great Viet{a} It is my country."
+		"... {wa 0.5} I will fight to the bitter end for my country."
+	-China
+		Tran Hung Dao "YOU TRAITOR!" playsfx(thunder_strong_01 -p 0.5)
+		"you shall experience fate worse than death."
+	-I dont care
+		Tran Hung Dao "Hump... {wa 0.5} Get lost!"
+}
+
 SetLayerMedia(background Nebula), SetLayerMedia(background -l 1 SpaceshipInterior)
 
 Wait(1)
-CreateCharacter("tuong as Tran Hung Dao"), CreateCharacter("linh1 as Linh Dai Viet"), CreateCharacter("linh2 as Linh Nguyen Mong")
+CreateCharacter("linh1 as Linh Dai Viet"), CreateCharacter("linh2 as Linh Nguyen Mong")
 
 PlaySong("Calm2")
 
 [wait]Show(tuong linh1 linh2 -spd 0.1)
+
+
 
 Wait(1)
 

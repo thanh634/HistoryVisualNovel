@@ -16,7 +16,7 @@ namespace DIALOGUE
             Queue<Conversation> queue = new Queue<Conversation>();
             queue.Enqueue(conversation);
 
-            while(conversationQueue.Count > 0)
+            while (conversationQueue.Count > 0)
                 queue.Enqueue(conversationQueue.Dequeue());
 
             conversationQueue = queue;
@@ -28,9 +28,9 @@ namespace DIALOGUE
                 conversationQueue.Dequeue();
         }
 
-        public bool isEmpty() => conversationQueue.Count == 0;
+        public bool IsEmpty() => conversationQueue.Count == 0;
 
         public void Clear() => conversationQueue.Clear();
-        
+
     }
 }

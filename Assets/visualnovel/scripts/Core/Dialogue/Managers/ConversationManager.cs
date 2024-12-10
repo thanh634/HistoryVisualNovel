@@ -2,7 +2,7 @@ using CHARACTER;
 using COMMANDS;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using DIALOGUE.LogicalLines;
 using UnityEngine;
 
 namespace DIALOGUE
@@ -18,46 +18,41 @@ namespace DIALOGUE
         private bool userPrompt = false;
 
         private TagManager tagManager;
+        private LogicalLineManager logicalLineManager;
+        private ConversationQueue conversationQueue;
+        public Conversation conversation => (conversationQueue.IsEmpty() ? null : conversationQueue.top);
 
+        public int conversationProgress => (conversationQueue.IsEmpty() ? -1 : conversationQueue.top.GetProgress());
         public ConversationManager(TextArchitect architect) 
         {
             this.architect = architect;
             dialogueSystem.onUserPrompt_Next += OnUserPrompt_Next;
 
             tagManager = new TagManager();
-            //logicalLineManager = new LogicalLineManager();
-            //conversationQueue = new ConversationQueue();
+            logicalLineManager = new LogicalLineManager();
+            conversationQueue = new ConversationQueue();
         }
 
-        //public void Enqueue(Conversation conversation) => conversationQueue.Enqueue(conversation);
-        //public void EnqueuePriority(Conversation conversation) => conversationQueue.EnqueuePriority(conversation);
+        public void Enqueue(Conversation conversation) => conversationQueue.Enqueue(conversation);
+        public void EnqueuePriority(Conversation conversation) => conversationQueue.EnqueuePriority(conversation);
 
         private void OnUserPrompt_Next()
         {
             userPrompt = true;
         }
 
-        //public Coroutine StartConversation(Conversation conversation)
-        //{
-        //    StopConversation();
-        //    conversationQueue.Clear();
-
-        //    Enqueue(conversation);
-
-        //    process = dialogueSystem.StartCoroutine(RunningConversation());
-
-        //    return process;
-        //}
-
-        public Coroutine StartConversation(List<string> conversation)
+        public Coroutine StartConversation(Conversation conversation)
         {
             StopConversation();
+            conversationQueue.Clear();
 
-            process = dialogueSystem.StartCoroutine(RunningConversation(conversation));
+            Enqueue(conversation);
+
+            process = dialogueSystem.StartCoroutine(RunningConversation());
 
             return process;
         }
-        
+
         public void StopConversation()
         {
             if (!isRunning)
@@ -67,30 +62,65 @@ namespace DIALOGUE
             process = null;
         }
 
-        IEnumerator RunningConversation(List<string> conversation)
+        IEnumerator RunningConversation()
         {
-            for (int i = 0; i < conversation.Count; i++)
+            while(!conversationQueue.IsEmpty())
             {
-                //Ignore blank lines
-                if (string.IsNullOrWhiteSpace(conversation[i])) continue;
-
-                DialogueLine line  = DialogueParser.Parse(conversation[i]);
-
-                //Show dialogue
-                if(line.hasDialogue)
-                    yield return Line_RunDialogue(line);
-
-                if (line.hasCommands)
-                    yield return Line_RunCommands(line);
-
-                //wait for user input
-                if(line.hasDialogue)
+                Conversation currentConversation = conversation;
+                if(currentConversation.HasReachedEnd())
                 {
-                    yield return WaitForUserInput();
-
-                    CommandManager.instance.stopAllProcesses();
+                    conversationQueue.Dequeue();
+                    continue;
                 }
+
+                string rawLine = currentConversation.CurrentLine();
+
+                //Ignore blank lines
+                if (string.IsNullOrWhiteSpace(rawLine))
+                {
+                    TryAdvanceConversation(currentConversation);
+                    continue;
+                }
+
+                DialogueLine line  = DialogueParser.Parse(rawLine);
+
+                if (logicalLineManager.TryGetLogic(line, out Coroutine logic))
+                {
+                    yield return logic;
+                }
+                else
+                {
+                    //Show dialogue
+                    if (line.hasDialogue)
+                        yield return Line_RunDialogue(line);
+
+                    if (line.hasCommands)
+                        yield return Line_RunCommands(line);
+
+                    //wait for user input
+                    if (line.hasDialogue)
+                    {
+                        yield return WaitForUserInput();
+
+                        CommandManager.instance.stopAllProcesses();
+                    }
+                }
+
+                TryAdvanceConversation(currentConversation);
             }
+
+            process = null;
+        }
+
+        private void TryAdvanceConversation(Conversation conversation)
+        {
+            conversation.IncrementProgress();
+
+            if (conversation != conversationQueue.top)
+                return;
+
+            if(conversation.HasReachedEnd())
+                conversationQueue.Dequeue();
         }
 
         IEnumerator Line_RunDialogue(DialogueLine line)

@@ -11,6 +11,7 @@ namespace DIALOGUE
     {
         public string name, castName;
         public Vector2 castPosition;
+        public string rawData { get; private set; } = string.Empty;
 
         //the name to be displayed in dialogue box showing who is speaking
         public string displayName => castName != string.Empty ? castName : name;
@@ -43,6 +44,7 @@ namespace DIALOGUE
 
         public DL_SpeakerData(string rawSpeaker)
         {
+            rawData = rawSpeaker;
             rawSpeaker = ProcessKeywords(rawSpeaker);
 
             string pattern = @$"{NAME_CAST_ID}|{POS_CAST_ID}|{EXP_CAST_ID.Insert(EXP_CAST_ID.Length - 1, @"\")}";
