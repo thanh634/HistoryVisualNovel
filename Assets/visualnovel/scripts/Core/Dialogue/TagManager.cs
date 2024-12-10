@@ -16,9 +16,11 @@ public class TagManager
 
     private void InitializeTags()
     {
+        tags["<mainChar>"] = () => "THANH KY";
         tags["<vua>"] = () => "Tran Nhan Tong";
         tags["<time>"] = () => DateTime.Now.ToString("hh:mm tt");
         tags["<playerLevel>"] = () => "15";
+        tags["<input>"] = () => InputPanel.instance.lastInput;
         tags["<tempVal1>"] = () => "42";
     }
 

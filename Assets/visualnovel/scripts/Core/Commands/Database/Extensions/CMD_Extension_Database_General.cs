@@ -82,14 +82,14 @@ namespace TESTING
 
             List<string> lines = FileManager.ReadTextAsset(file, includeBlankFiles: true);
 
-            //Conversation newConversation = new Conversation(lines);
+            Conversation newConversation = new Conversation(lines);
 
-            //if (enqueue)
-            //    DialogueSystem.instance.conversationManager.Enqueue(newConversation);
-            //else
-            //    DialogueSystem.instance.conversationManager.StartConversation(newConversation);
+            if (enqueue)
+                DialogueSystem.instance.conversationManager.Enqueue(newConversation);
+            else
+                DialogueSystem.instance.conversationManager.StartConversation(newConversation);
 
-            DialogueSystem.instance.conversationManager.StartConversation(lines);
+            //DialogueSystem.instance.conversationManager.StartConversation(lines);
 
         }
 
