@@ -1,0 +1,117 @@
+HideUI(-i true)
+narrator "dummy text", HideDB(-i true), [wait]SetLayerMedia(background main/tran-quoc-tuan), ShowUI(-i true)
+PlayAmbience(RainyMood)
+
+narrator "=========================== Chương 1 : Mở đầu ==========================="
+[wait]SetLayerMedia(background main/that-bai/tu-tran-1)
+"Thất bại cay đắng trong cuộc xâm lược Đại Việt năm 1285 không chỉ là một vết nhơ trong sự nghiệp chinh phạt của Hốt Tất Liệt, mà còn là nỗi sỉ nhục khó nuốt trôi của triều đình Nguyên."
+
+"Ngay sau khi rút quân, kế hoạch tái chiến đã được bí mật khởi động, với tham vọng lớn lao hơn bao giờ hết."
+
+[wait]SetLayerMedia(background main/hoi-thoai/ban-kiem-1)
+
+"Mùa hè năm 1286, Ngọn lửa chiến tranh lại một lần nữa bùng lên."
+
+"Khu mật viện nhà Nguyên dâng tấu đề nghị tái chinh phạt Đại Việt."
+
+"Hoàng đế nhà Nguyên lập tức phê chuẩn, chỉ định A Lý Hải Nha – viên tướng tài năng nhưng đầy tham vọng – làm người chủ trì việc chuẩn bị."
+
+[wait]SetLayerMedia(background main/chuan-bi-chien-tranh/dong-thuyen-chien)
+
+"Danh sách các chỉ huy được phê duyệt, hàng trăm tàu chiến được khởi công, và binh lính từ khắp nơi bắt đầu được tập hợp."
+ 
+"Từng bước, cỗ máy chiến tranh khổng lồ của nhà Nguyên lại vận hành, tất cả chỉ chờ lệnh xuất phát."
+
+CreateCharacter("vuaNguyen as Hot Tat Liet"), MoveCharacter(vuaNguyen -x 0 -spd 10 -sm false) 
+[wait]SetLayerMedia(background main/thanh-tri/cong-thanh-1)
+"Nhưng khi chiến dịch vừa được chuẩn bị, những cuộc khởi nghĩa của nhân dân miền Nam Trung Quốc đã khiến kế hoạch phải tạm hoãn." 
+"Hốt Tất Liệt không nản lòng, ra lệnh hoãn binh chỉ để dồn lực chuẩn bị kỹ lưỡng hơn." 
+"Đến cuối năm, chiến dịch được tái khởi động, với quyết tâm hủy diệt Đại Việt."
+
+CreateCharacter("tuongDich1 as Thoat Hoan"), CreateCharacter("tuongDich2 as Phan Kiep"), CreateCharacter("tuongDich3 as O Ma Nhi"), CreateCharacter("tuongDich4 as Ao Lo Xich")
+MoveCharacter(tuongDich1 -x 1 -spd 10 -sm false), tuongDich1.UnHighlight()
+MoveCharacter(tuongDich2 -x 0.9 -spd 10 -sm false), tuongDich2.UnHighlight()
+MoveCharacter(tuongDich3 -x 0.8 -spd 10 -sm false), tuongDich3.UnHighlight()
+MoveCharacter(tuongDich4 -x 0.7 -spd 10 -sm false, tuongDich4.UnHighlight() 
+
+[wait]SetLayerMedia(background main/hoi-thoai/doc-chieu-2)
+[wait]Show(vuaNguyen)
+Hốt Tất Liệt "Thoát Hoan, cuộc chinh phạt Đại Việt lần này, ta giao ngươi làm tổng tư lệnh." [wait]Show(tuongDich1)
+"A Lý Hải Nha sẽ là phó tổng tư lệnh." [wait]Show(tuongDich2)
+"Áo Lỗ Xích, Ô Mã Nhi, Trương Văn Hổ... các ngươi sẽ là những cánh tay đắc lực, hỗ trợ Thoát Hoan hoàn thành nhiệm vụ." [wait]Show(tuongDich3), [wait]Show(tuongDich4)
+vuaNguyen.UnHighlight()
+
+tuongDich1.Highlight()
+tuongDich2.Highlight()
+tuongDich3.Highlight()
+tuongDich4.Highlight()
+Các Tướng Địch "Chúng thần xin tuân mệnh!"
+
+tuongDich1.UnHighlight(), tuongDich2.UnHighlight(), tuongDich3.UnHighlight(), tuongDich4.UnHighlight(), vuaNguyen.Highlight()
+Hốt Tất Liệt "Hãy gấp rút huy động binh lính, tích trữ lương thảo và đóng ngay 300 tàu chiến cho ta."
+"Lần này, Đại Việt phải khuất phục dưới vó ngựa Nguyên Mông!"
+
+[wait]SetLayerMedia(background main/hoi-thoai/doc-chieu-1)
+Hide(vuaNguyen tuongDich1 tuongDich2 tuongDich3 tuongDich4)
+narrator "Hành trình chinh phạt không chỉ đơn thuần là tham vọng bành trướng, mà còn là lời tuyên chiến với lòng tự tôn của một dân tộc."
+"Liệu Đại Việt có thể một lần nữa đứng vững trước cơn bão giông từ phương Bắc?"
+"Cuộc chiến sắp tới, hẳn sẽ khắc ghi dấu ấn không thể phai mờ trong lịch sử hai quốc gia."
+
+[wait]SetLayerMedia(background main/chuong-gio)
+"Tại phủ Thiên Trường,..."
+
+CreateCharacter("vua as Tran Nhan Tong")
+CreateCharacter("daiTuong as Tran Hung Dao"), MoveCharacter(daiTuong -x 0.8 -spd 10 -sm false), daiTuong.UnHighlight()
+CreateCharacter("tuong1 as Tran Nhat Duat"), tuong1.UnHighlight()
+
+[wait]SetLayerMedia(background main/hoi-thoai/vua-tuong-noi-chuyen)
+Show(vua daiTuong tuong1)
+Trần Nhân Tông "Hốt Tất Liệt hẳn vẫn còn chưa nguôi cơn giận trước thất bại tại Đại Việt lần trước."
+"Trẫm vừa nhận được tin hắn đã hạ lệnh dồn quân, chuẩn bị kéo sang xâm lược nước ta một lần nữa."
+
+vua.UnHighlight(), tuong1.Highlight()
+Trần Nhật Duật "Hốt Tất Liệt quả là kẻ có dã tâm không đáy. Hai lần bị quân dân ta đánh tan mà vẫn không từ bỏ ý đồ dày xéo bờ cõi."
+"Hành động của hắn chỉ khiến nhân dân lầm than, đất nước thêm cảnh điêu linh."
+
+tuong1.UnHighlight(), daiTuong.Highlight()
+Trần Hưng Đạo "Bẩm bệ hạ, quân Nguyên đã bắt đầu tập kết ở vùng Hồ Quảng."
+"Chúng kéo sang nước ta chỉ là chuyện sớm muộn."
+"Thần đoán rằng bệ hạ đang canh cánh trong lòng vì đại nạn sắp ập đến."
+
+vua.Highlight(), daiTuong.UnHighlight()
+Trần Nhân Tông "Đúng vậy, Quốc Công."
+"Trẫm lo không biết liệu lần này quân dân ta có đủ sức chống lại vó ngựa Nguyên Mông hung hãn hay không."
+
+PlaySong("Calm2" -sv 0)
+StopAmbience()
+[wait]SetLayerMedia(background main/chuan-bi-chien-tranh/chuan-bi-luong-thao)
+vua.UnHighlight(), daiTuong.Highlight()
+Trần Hưng Đạo "Bệ hạ đã tận mắt chứng kiến cảnh binh sĩ ngày đêm rèn luyện, dân chúng hăng hái cày cấy, tích trữ lương thực để chuẩn bị cho chiến tranh."
+
+"Năm trước, vì quân dân Đại Việt đã lâu hưởng thái bình, chưa quen việc chiến trận, nên giặc Nguyên có lúc tưởng như áp đảo. Lại có kẻ yếu lòng trốn tránh, theo hàng giặc."
+
+"Nhưng nhờ oai linh tổ tông và thần võ của bệ hạ, ta đã đập tan quân thù, quét sạch chúng ra khỏi bờ cõi."
+
+"Giờ đây, quân ta đã quen chiến trận, lòng quân ý dân đồng thuận."
+
+"Trong khi đó, quân Nguyên viễn chinh xa xôi, sức mỏi ý chùn."
+
+"Hẳn chúng cũng còn khiếp sợ khi nhớ lại những trận thảm bại, Toa Đô, Lý Hằng, Lý Quán tử trận. "
+
+"Theo ý thần, lần này giặc Nguyên có sang, ta cũng dễ bề đánh phá hơn phen trước. Bệ hạ xin hãy an lòng!"
+
+vua.Highlight(), daiTuong.UnHighlight()
+Trần Nhân Tông "Được lời Quốc Công khích lệ, trẫm còn lo gì nữa."
+"Đại Việt ta nhất định sẽ thêm một lần nữa đứng vững, chống lại cơn bão giông từ phương Bắc!"
+
+Hide(vua daiTuong tuong1)
+[wait]ClearLayerMedia(background -b hurricane)
+HideDB()
+
+choice "Tiếp tục ?"
+{
+	-Tiếp Chương 2
+		Load("Chuong 2"), StopSong()
+	-Xem Lại Chương 1
+		Load("Chuong 1"), StopSong()
+}
