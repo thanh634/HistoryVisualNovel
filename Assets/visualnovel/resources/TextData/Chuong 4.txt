@@ -1,0 +1,165 @@
+﻿
+
+CreateCharacter("vua as Tran Nhan Tong"), MoveCharacter(vua -x 0 -spd 10 -sm false), vua.UnHighlight()
+CreateCharacter("daiTuong as Tran Hung Dao"), MoveCharacter(daiTuong -x 0 -spd 10 -sm false), daiTuong.UnHighlight()
+CreateCharacter("tuong1 as Tran Nhat Duat"), MoveCharacter(tuong1 -x 0 -spd 10 -sm false), tuong1.UnHighlight()
+CreateCharacter("tuong2 as Tran Quan"), MoveCharacter(tuong2 -x 0 -spd 10 -sm false), tuong2.UnHighlight()
+CreateCharacter("tuong3 as Tran Gia"), MoveCharacter(tuong3 -x 0 -spd 10 -sm false), tuong3.UnHighlight()
+CreateCharacter("tuong4 as Nguyen Khoai"), MoveCharacter(tuong4 -x 0 -spd 10 -sm false), tuong4.UnHighlight()
+CreateCharacter("tuong5 as Tran Khanh Du"), MoveCharacter(tuong5 -x 0 -spd 10 -sm false), tuong5.UnHighlight()
+CreateCharacter("linh1 as Linh Dai Viet"), linh1.SetSprite(-s 1), MoveCharacter(linh1 -x 0 -spd 10 -sm false), linh1.UnHighlight()
+CreateCharacter("linh2 as Linh Dai Viet"), MoveCharacter(linh2 -x 0 -spd 10 -sm false), linh2.UnHighlight()
+
+CreateCharacter("vuaNguyen as Hot Tat Liet"), MoveCharacter(vuaNguyen -x 1 -spd 10 -sm false), vuaNguyen.UnHighlight()
+CreateCharacter("tuongDich1 as Thoat Hoan"), MoveCharacter(tuongDich1 -x 1 -spd 10 -sm false), tuongDich1.Highlight()
+CreateCharacter("tuongDich2 as Ai Lo"), MoveCharacter(tuongDich2 -x 1 -spd 10 -sm false), tuongDich2.UnHighlight()
+CreateCharacter("tuongDich3 as O Ma Nhi"), MoveCharacter(tuongDich3 -x 1 -spd 10 -sm false), tuongDich3.UnHighlight()
+CreateCharacter("tuongDich4 as Trinh Bang Phi"), MoveCharacter(tuongDich4 -x 1 -spd 10 -sm false), tuongDich4.UnHighlight()
+CreateCharacter("tuongDich5 as Bot Da Cap Dap Nhi"), MoveCharacter(tuongDich5 -x 1 -spd 10 -sm false), tuongDich5.UnHighlight()
+CreateCharacter("tuongDich6 as Ao Lo Xich"), MoveCharacter(tuongDich6 -x 1 -spd 10 -sm false), tuongDich6.UnHighlight()
+CreateCharacter("tuongDich7 as Phan Kiep"), MoveCharacter(tuongDich7 -x 1 -spd 10 -sm false), tuongDich7.UnHighlight()
+CreateCharacter("tuongDich8 as Truong Van Ho"), MoveCharacter(tuongDich8 -x 1 -spd 10 -sm false), tuongDich8.UnHighlight()
+CreateCharacter("linhDich1 as Linh Nguyen Mong"), MoveCharacter(linhDich1 -x 1 -spd 10 -sm false), linhDich1.UnHighlight()
+CreateCharacter("linhDich2 as Linh Nguyen Mong"), linhDich2.SetSprite(-s 2), MoveCharacter(linhDich2 -x 1 -spd 10 -sm false), linhDich2.UnHighlight()
+[wait]SetLayerMedia(background main/ban-do/ban-do-1)
+
+narrator "=========== Chương 4 : Đại Chiến Bạch Đằng - Nguyên Mông Đổ Máu ========="
+MoveCharacter(tuongDich3 -x 0.6 -spd 10 -sm false)
+MoveCharacter(linhDich1 -x 0 -spd 10 -sm false)
+" Cuối tháng 3 năm 1288, nhận thấy tình thế không thuận lợi, Thoát Hoan quyết định chia quân rút lui khỏi Đại Việt. 
+Bộ binh do Thoát Hoan chỉ huy rút về theo đường bộ qua Lạng Châu. "
+
+"Thủy quân do Ô Mã Nhi và Phàn Tiếp chỉ huy xuôi sông Bạch Đằng ra biển với sự hộ tống của Trịnh Bằng Phi và kỵ binh trên bộ . 
+Kế hoạch tưởng chừng chu toàn, nhưng quân Đại Việt dưới sự chỉ huy của Hưng Đạo Vương đã sẵn sàng một trận địa không thể thoát."
+
+[wait]SetLayerMedia(background main/keo-quan-thuy/keo-quan-thuy-2)
+
+tuongDich3.Highlight()
+Show(tuongDich3 tuongDich7)
+Ô Mã Nhi "Quân Đại Việt chỉ biết ẩn nấp và phục kích!"
+"Hết lần này tới lần khác chỉ tìm cách cắt đứt nguồn lương thảo của ta, làm lòng quân ta nao núng.{a} Đúng là một bọn hèn nhát"
+
+tuongDich3.UnHighlight(), tuongDich7.Highlight()
+Phàn Tiếp "Đúng vậy, lũ chuột nhắt đó đâu có gan mà đánh trực diện với đạo quân Mông Nguyên hùng mạnh của ta."
+"Có giỏi thì ra đánh một trận cho ra trò với quân thủy quân của ta này, ta sẽ đánh cho chúng nó tơi bời"
+tuongDich7.UnHighlight(), Hide(tuongDich3 tuongDich7)
+
+MoveCharacter(tuongDich3 -x 1 -spd 10 -sm false)
+
+[wait]SetLayerMedia(background main/ban-do/ban-do-1)
+narrator "Ngày 30/3/1288, khi thủy quân Nguyên bắt đầu rút lui, kỵ binh hộ tống của Trịnh Bằng Phi gặp phải địa hình bất lợi và tin báo có quân mai phục ở bờ sông Đông Chiều."
+"Trịnh Bằng Phi lập tức dẫn quân rút lui, để lại thủy quân không người bảo vệ."
+
+[wait]SetLayerMedia(background main/keo-quan-thuy/keo-quan-thuy-2)
+
+linhDich1.Highlight(), Show(tuongDich3 linhDich1)
+Lính Nguyên Mông "Không có kỵ binh hộ tống, chẳng lẽ chúng ta chỉ dựa vào sức của mình mà chống lại phục binh?"
+
+tuongDich3.Highlight(), linhDich1.UnHighlight()
+Ô Mã Nhi "Hèn nhát!{a} Chúng ta là đội quân mạnh nhất thiên hạ!{a} Tiếp tục tiến lên!"
+tuongDich3.UnHighlight(), Hide(tuongDich3 linhDich1)
+
+[wait]SetLayerMedia(background main/hoi-thoai/vua-tuong-noi-chuyen)
+"Tại doanh trại Đại Việt"
+MoveCharacter(vua -x 1 -spd 10 -sm false)
+daiTuong.Highlight(), Show(daiTuong)
+Trần Hưng Đạo "Ngày trước sông Bạch Đằng này đã chôn vùi binh tướng Giao vương, chấm dứt thời kỳ đô hộ phương Bắc."
+"Nay ở chính sông Bạch Đằng này ta sẽ mượn linh khí của nước Nam ta đả bại bọn giặc ngoại xâm này. "
+
+Trần Hưng Đạo "Sông Bạch Đằng này sẽ là thủy mồ của bọn chúng."
+
+vua.Highlight(), daiTuong.UnHighlight(), show(vua)
+MoveCharacter(tuong4 -x 1 -spd 0.9 -sm false)
+MoveCharacter(tuong5 -x 0.7 -spd 10 -sm false)
+
+Vua Trần Nhân Tông "Quốc Công, lần này phải khiến cho quân Nguyên đại bại, từ nay về sau không còn dám xâm lược nước ta nữa."
+MoveCharacter(daiTuong -x 0.3 -spd 1 -sm true)
+vua.UnHighlight(), daiTuong.Highlight(), Show(linh1)
+[wait]SetLayerMedia(background main/hoi-thoai/thang-tran-tren-song)
+Trần Hưng Đạo "Ngươi cho quân lính cắm cọc nhọn xuống sông, vừa làm cạm bẫy đánh chìm thuyền giặc, vừa làm hẹp thủy lộ khiến thuyền giặc phải di chuyển theo quân ta."
+Hide(vua), Show(tuong4 tuong5)
+Trần Hưng Đạo "Các ngươi quân thủy bộ mai phục dày đặc ở các tuyến sông Giá, sông Chanh, sông Đá Bạch."
+"Cho thuyền nhỏ liên tục đánh quấy rối địch, mục tiêu làm tiêu hao sinh lực địch nhiều nhất có thể."
+
+daiTuong.UnHighlight(), tuong4.Highlight(), tuong5.Highlight()
+Nguyễn Khoái, Trần Khánh Dư "Đã rõ!"
+tuong4.UnHighlight(), tuong5.UnHighlight()
+Hide(linh1 tuong4 tuong5 đaiTuong)
+MoveCharacter(tuong4 -x 0 -spd 10 -sm false)
+
+[wait]SetLayerMedia(background main/keo-quan-thuy/keo-quan-thuy-2)
+
+narrator "Ngày 8/4/1288, Ô Mã Nhi dẫn quân đến ngã ba sông Đá Bạch và sông Giá."
+"Muốn lợi dụng thủy triều rút để ra biển, nhưng quân Đại Việt bố trí chặt chẽ khiến chúng buộc phải đi vào sông Đá Bạch"
+
+[wait]SetLayerMedia(background main/giao-chien-tren-thuy/di-thuyen-nho-1)
+"Thủy triều lên cao, Hưng Đạo Vương dẫn quân ra khiêu chiến ngay tại cửa sông Bạch Đằng."
+
+daiTuong.Highlight(), Show(daiTuong)
+Trần Hưng Đạo "Đánh nhử địch, giữ chúng ở đây cho đến khi thủy triều rút! 
+Không được sơ suất!"
+
+daiTuong.UnHighlight(), tuong4.Highlight(), Show(tuong4)
+Nguyễn Khoái "Thưa Quốc Công, chúng sẽ rơi vào bẫy như cá mắc lưới!"
+tuong4.UnHighlight(), Hide(tuong4 daiTuong)
+
+[wait]SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-1)
+
+narrator " Quân Đại Việt và quân Nguyên bắt đầu giao chiến trên sông, quân Đại Việt thấy yếu thì lên, thấy mạnh thì lùi, cố tình dụ địch."
+"Quân Nguyên thấy quân Đại Việt rút lui, tưởng rằng đối phương sợ hãi, liền thúc thuyền đuổi theo. "
+
+[wait]SetLayerMedia(background main/giao-chien-tren-thuy/coc-bach-dang-1)
+"Đoàn chiến thuyền của quân Nguyên lọt vào bãi cọc ngầm dưới lòng sông mà không hề hay biết."
+
+"Khi thủy triều rút,..."
+
+[wait]SetLayerMedia(background main/giao-chien-tren-thuy/coc-bach-dang-2)
+MoveCharacter(tuongDich7 -x 0.6 -spd 10 -sm false)
+tuongDich3.Highlight(), Show(tuongDich3)
+Ô Mã Nhi "Cái gì thế này?{a} Cọc đâu ra thế này!{a} Mau rút lui!"
+
+tuongDich3.UnHighlight(), tuongDich7.Highlight(), Show(tuongDich7)
+Phàn Tiếp "Không thể rút được!{a} Cọc nhọn phía trước, quân Đại Việt phía sau!"
+tuongDich7.UnHighlight()
+
+[wait]SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-2)
+narrator "Ngay lúc đó, Hưng Đạo Vương phát lệnh phản công."
+"Các chiến thuyền Đại Việt từ mọi nhánh sông tràn ra, cung tên và hỏa tiễn như mưa từ hai bên bờ."
+[wait]SetLayerMedia(background main/giao-chien-tren-thuy/coc-bach-dang-xuyen-thuyen)
+
+tuong4.Highlight(), show(tuong4), MoveCharacter(tuong4 -x 0.5 -spd 1 -sm true)
+Nguyễn Khoái "Đánh thẳng vào chính diện!{a} Chặn đường lui của giặc!"
+tuong4.UnHighlight(), tuongDich3.Highlight()
+Ô Mã Nhi "Phàn Tiếp, cho quân đổ bộ lên núi Tràng Kênh! Chúng ta sẽ chiếm thế cao mà chống lại!"
+tuongDich3.UnHighlight()
+Hide(tuongDich3 tuongDich7 tuong4)
+MoveCharacter(tuong4 -x 0.3 -spd 10 -sm false)
+MoveCharacter(daiTuong -x 0.7 -spd 10 -sm false)
+[wait]SetLayerMedia(background main/giao-chien-tren-bo/giao-chien-1)
+narrator "Nhưng vừa đặt chân lên núi, quân của Phàn Tiếp đã lọt vào vòng vây mai phục. Bị đánh tan tác, Phàn Tiếp bị thương, rơi xuống nước và bị quân Đại Việt bắt sống."
+
+"Cuối ngày,..."
+
+[wait]SetLayerMedia(background main/hoi-thoai/thang-tran-tren-song)
+tuong4.Highlight(), show(tuong4 daiTuong)
+Nguyễn Khoái "Bẩm Quốc Công, toàn bộ thủy quân Nguyên đã bị tiêu diệt. Ô Mã Nhi và Phàn Tiếp đã bị bắt, hơn 400 chiến thuyền giờ nằm trong tay ta."
+daiTuong.Highlight(), tuong4.UnHighlight()
+Trần Hưng Đạo "Tốt, rất tốt!"
+daiTuong.UnHighlight(), Hide(daiTuong tuong4)
+
+[wait]SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-3)
+narrator "Với hơn 6 vạn quân Nguyên bị tiêu diệt và bắt sống, hàng trăm chiến thuyền bị phá hủy, chiến thắng Bạch Đằng đã ghi dấu ấn vang dội trong lịch sử Đại Việt, trở thành niềm tự hào của dân tộc mãi về sau."
+
+[wait]ClearLayerMedia(background -b hurricane)
+
+choice "Tiếp tục ?"
+{
+	-Tiếp Chương 5
+		Load("Chuong 5")
+	-Xem Lại Chương 4
+		Load("Chuong 4")
+	-Về Mục lục
+		Load("Muc Luc")
+}
+
+
