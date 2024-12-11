@@ -23,16 +23,16 @@ public class BattleWindow : MonoBehaviour {
     private Text specialAmountText;
 
     private void Awake() {
-        healthPotionAmountText = transform.Find("healthPotionAmountText").GetComponent<Text>();
-        healthPotionBlocker = transform.Find("healthPotionBlocker").gameObject;
+        // healthPotionAmountText = transform.Find("healthPotionAmountText").GetComponent<Text>();
+        // healthPotionBlocker = transform.Find("healthPotionBlocker").gameObject;
         
         specialAmountText = transform.Find("specialAmountText").GetComponent<Text>();
         specialBlocker = transform.Find("specialBlocker").gameObject;
     }
 
     private void Update() {
-        healthPotionAmountText.text = GameData.healthPotionCount.ToString();
-        healthPotionBlocker.gameObject.SetActive(GameData.healthPotionCount <= 0);
+        // healthPotionAmountText.text = GameData.healthPotionCount.ToString();
+        // healthPotionBlocker.gameObject.SetActive(GameData.healthPotionCount <= 0);
 
         CharacterBattle characterBattle = BattleHandler.GetInstance().GetActiveCharacterBattle();
         specialAmountText.text = characterBattle.GetSpecial().ToString();

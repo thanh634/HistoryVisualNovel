@@ -26,7 +26,7 @@ public class OvermapHandler {
 
     public static void LoadBackToOvermap() { 
         Debug.Log("abc");
-        Loader.Load(Loader.Scene.GameScene);
+        Loader.Load(Loader.Scene.MainMenu);
     }
 
     public static void SaveAllCharacterPositions() {

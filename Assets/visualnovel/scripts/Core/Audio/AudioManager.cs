@@ -25,6 +25,7 @@ public class AudioManager : MonoBehaviour
         {
             transform.SetParent(null);
             DontDestroyOnLoad(gameObject);
+            Debug.Log("AudioManager is created");
             instance = this;
         }
         else

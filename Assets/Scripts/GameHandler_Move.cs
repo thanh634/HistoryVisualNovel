@@ -13,6 +13,7 @@ public class GameHandler_Move : MonoBehaviour {
     [SerializeField] private CameraFollow cameraFollow;
     public Button saveButton;
     private void Awake() {
+        UnityEngine.Rendering.DebugManager.instance.enableRuntimeUI = false;
         new MoveHandler();
 
         if (MoveHandler.enemyEncounter == null) {
@@ -31,6 +32,7 @@ public class GameHandler_Move : MonoBehaviour {
     }
 
     private void Start() {
+        
         // Set up Battle Scene
         //MoveHandler.SpawnCharacter(MoveHandler.LanePosition.Middle, true);
         //MoveHandler.SpawnCharacter(MoveHandler.LanePosition.Up, true);

@@ -18,14 +18,15 @@ using UnityEngine.SceneManagement;
 public static class Loader {
 
     public enum Scene {
-        GameScene,
+        MainMenu,
+        VisualNovel,
         Loading,
-        BattleScene,
-        Cinematic_1,
-        Cinematic_SleezerWin,
-        GameOver,
+        ComingSoon,
         SetupScene,
-        Win,
+        BattleScene,
+        Victory,
+        Defeat,
+        Ending,
     }
 
     private static Scene targetScene;

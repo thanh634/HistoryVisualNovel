@@ -459,7 +459,7 @@ public class MoveHandler {
             GameData.GetCharacter(Character.Type.Healer).stats.health = 1;
             GameData.state = GameData.State.LostToEvilMonster_1;
 
-            Loader.Load(Loader.Scene.Cinematic_1);
+            Loader.Load(Loader.Scene.MainMenu);
             //OvermapHandler.LoadBackToOvermap();
             break;
         case GameData.State.FightingEvilMonster_2:
@@ -470,7 +470,7 @@ public class MoveHandler {
             GameData.GetCharacter(Character.Type.Healer).stats.health = 1;
             GameData.state = GameData.State.LostToEvilMonster_2;
 
-            Loader.Load(Loader.Scene.Cinematic_1);
+            Loader.Load(Loader.Scene.MainMenu);
             //OvermapHandler.LoadBackToOvermap();
             break;
         case GameData.State.FightingEvilMonster_3:
@@ -478,7 +478,7 @@ public class MoveHandler {
             character.isDead = true;
             GameData.state = GameData.State.DefeatedEvilMonster;
             
-            Loader.Load(Loader.Scene.Cinematic_SleezerWin);
+            Loader.Load(Loader.Scene.MainMenu);
             //OvermapHandler.LoadBackToOvermap();
             break;
         }

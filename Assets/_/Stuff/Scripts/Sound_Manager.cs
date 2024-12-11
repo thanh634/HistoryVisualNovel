@@ -134,6 +134,7 @@ public static class Sound_Manager {
 	}
     private static void CreateGlobalObject() {
         globalGameObject = new GameObject();
+        Debug.Log("CreateGlobalObject");
         Object.DontDestroyOnLoad(globalGameObject);
         globalGameObject.AddComponent<MonoBehaviourDummy>();
     }

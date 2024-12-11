@@ -25,8 +25,8 @@ public class MainMenuWindow : MonoBehaviour {
 
     private Transform subMain;
     private Transform subRecipe;
-    private Transform subControls;
-    private Transform subRecipePlay;
+    private Transform subGuide;
+    private Transform abc;
 
     private Button skipButton;
     private Text guideText;
@@ -47,11 +47,15 @@ public class MainMenuWindow : MonoBehaviour {
         
         SoundManager.Initialize();
 
+
         subRecipe = transform.Find("subRecipe");
+        subGuide = transform.Find("subGuideTerrain");
+        abc = subRecipe.Find("abc");
+        subGuide.gameObject.SetActive(false);
 
         ShowSub(Sub.Recipe);
         state = State.ShowGuide;
-        guideText = subRecipe.Find("recipeText").GetComponent<Text>();
+        guideText = GameObject.Find("recipeText").GetComponent<Text>();
         textIndex = 0;
     }
 
@@ -60,6 +64,7 @@ public class MainMenuWindow : MonoBehaviour {
 
         UnityAction action = () => { 
             subRecipe.gameObject.SetActive(false);
+            subGuide.gameObject.SetActive(false);
             MoveHandler.GetInstance().SkipGuide();
             state = State.DoNothing;
         };
@@ -71,7 +76,8 @@ public class MainMenuWindow : MonoBehaviour {
     private List<string> guideTexts = new List<string> {
         "Welcome to the game! This is a guide to help you get started.",
         "This scene is where you set up your team and think about your strategy. You can move your characters to where you want in the map, which will affect to their damage and special effect.",
-        "Example: - Infantry has average strength in all terrains, and has great strength when organizing ambushes \n- Cavalry has great strength in open terrains, and has great strength when charging",
+        "The enemy will chose the closest character to attack\nAnd terrain where your character stand will affect to damage",
+        "",
         "- Press 'C' change the mode to CHOOSE CHARACTER, where you can select what character you want to move\n- Press 'M' change the mode to MOVE CHARACTER, where you can move character by using simple key like ASWD or arrow key",
         "Press Ctrl+S to save the your setup position and start battle",
         "Now, click SKIP BUTTON and setup your team to start the battle!"
@@ -83,9 +89,17 @@ public class MainMenuWindow : MonoBehaviour {
         case State.ShowGuide:
             // press space to continue
             if (Input.GetKeyDown(KeyCode.Space)) {
-                textIndex = Mathf.Clamp(textIndex, 0, guideTexts.Count - 1);
-                guideText.text = guideTexts[textIndex];
-                textIndex++; 
+                if (textIndex == 3) {
+                    abc.gameObject.SetActive(false);
+                    subGuide.gameObject.SetActive(true);
+                    textIndex++;
+                } else if (textIndex < guideTexts.Count){
+                    
+                    abc.gameObject.SetActive(true);
+                    subGuide.gameObject.SetActive(false);
+                    guideText.text = guideTexts[textIndex];
+                    textIndex++; 
+                }
             }     
             break;
         case State.DoNothing:

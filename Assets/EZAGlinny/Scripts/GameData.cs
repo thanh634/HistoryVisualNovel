@@ -190,6 +190,11 @@ public static class GameData {
         }
     }
 
+    public static void HealAllCharacter() {
+        for (int i = 0; i < characterList.Count; i++) {
+            characterList[i].stats.health = characterList[i].stats.healthMax;
+        }
+    }
 
 
 

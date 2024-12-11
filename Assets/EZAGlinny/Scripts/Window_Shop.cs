@@ -66,7 +66,7 @@ public class Window_Shop : MonoBehaviour {
             shopContents.hasFtnDewArmor = false;
             GameData.GetCharacter(Character.Type.Player).hasFtnDewArmor = true;
             OvermapHandler.SaveAllCharacterPositions();
-            Loader.Load(Loader.Scene.GameScene);
+            Loader.Load(Loader.Scene.MainMenu);
         }
     }
 
