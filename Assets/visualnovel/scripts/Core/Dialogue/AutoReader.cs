@@ -95,8 +95,10 @@ namespace DIALOGUE
 
         public void Toggle_Auto()
         {
+            bool prevState = skip;
+            skip = false;
 
-            if(skip)
+            if (prevState)
                 Enable();
             else 
             {
@@ -106,14 +108,14 @@ namespace DIALOGUE
                     Disable();
             }
 
-            skip = false;
-            statusText.text = STATUS_TEXT_AUTO;
         }
 
         public void Toggle_Skip()
         {
+            bool prevState = skip;
+            skip = true;
 
-            if (!skip)
+            if (!prevState)
                 Enable();
             else
             {
@@ -123,8 +125,6 @@ namespace DIALOGUE
                     Disable();
             }
 
-            skip = true;
-            statusText.text = STATUS_TEXT_SKIP;
         }
     }
 }
