@@ -29,4 +29,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Victory.unity
     guid: 2b76677708340535dbb9fbffc0fc2e58
+  - enabled: 1
+    path: Assets/Scenes/VisualNovel1.unity
+    guid: 89979b344b639f6f2a930575eaa4fa45
+  - enabled: 1
+    path: Assets/Scenes/VisualNovel2.unity
+    guid: 766f410e9f4abee47a9446aeb705bc27
+  - enabled: 1
+    path: Assets/Scenes/VisualNovel3.unity
+    guid: a2b29db4aae531baebcb248925b48af0
+  - enabled: 1
+    path: Assets/Scenes/VisualNovel4.unity
+    guid: 31a2a1e1812f8b1cf957321b12bb9a85
+  - enabled: 1
+    path: Assets/Scenes/VisualNovel5.unity
+    guid: 1d479072569acb71d9a885a65a72c7b6
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 25acad3e069b7eb14b656fbb6d9bca60
   m_configObjects: {}

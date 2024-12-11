@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
 
     void StartGame()
     {
-        Loader.Load(Loader.Scene.VisualNovel);
+        Loader.Load(Loader.Scene.VisualNovel1);
     }
 
     void Start()

@@ -61,6 +61,10 @@ namespace CHARACTER
                 root = ob.GetComponent<RectTransform>();
                 animator = root.GetComponentInChildren<Animator>();
             }
+            else
+            {
+                Debug.LogError($"Character prefab for '{name}' is null!");
+            }
         }
 
         public Coroutine Say(string dialogue) => Say(new List<string> { dialogue });

@@ -13,7 +13,16 @@ namespace CHARACTER
         private const string SPRITE_RENDERER_PARENT_NAME = "Renderers";
         private const string SPRITESHEET_DEFAULT_SHEETNAME = "Default";
         private const char SPRITESHEET_TEX_SPRITE_DELIMETER = '-';
-        private CanvasGroup rootCG => root.GetComponent<CanvasGroup>();
+        private CanvasGroup rootCG
+        {
+            get
+            {
+                if (root == null)
+                    Debug.Log("root is null");
+                Debug.Log("root" + root);
+                return root.GetComponent<CanvasGroup>();
+            }
+        }
         public List<CharacterSpriteLayer> layers = new List<CharacterSpriteLayer>();
 
         private string artAssetsDirectory = "";

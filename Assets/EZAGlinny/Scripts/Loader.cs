@@ -20,6 +20,11 @@ public static class Loader {
     public enum Scene {
         MainMenu,
         VisualNovel,
+        VisualNovel1,
+        VisualNovel2,
+        VisualNovel3,
+        VisualNovel4,
+        VisualNovel5,
         Loading,
         ComingSoon,
         SetupScene,

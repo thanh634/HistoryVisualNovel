@@ -1,0 +1,22 @@
+
+[wait]SetLayerMedia(background main/chuong-gio)
+PlaySong("Calm2" -sv 0)
+narrator "========== #5. Chương 5 Quyết Thắng Và Hòa Bình ==========="
+
+"Cuộc kháng chiến lần thứ ba chống quân Nguyên là một trang sử hào hùng của Đại Việt, với chiến lược đánh vào điểm yếu của giặc, khiến đội quân hùng mạnh của Thoát Hoan rơi vào thế nguy khốn."
+
+"Trận Vân Đồn đã cắt đứt nguồn lương thảo quan trọng của quân Nguyên, buộc chúng phải tản quân để cướp bóc, khiến đội hình bị phân tán và suy yếu."
+"Đây là bước ngoặt quyết định dẫn đến sự thất bại của quân Nguyên."
+
+"Nhà Trần không chỉ đẩy lùi cuộc xâm lược quy mô lớn, mà còn ghi danh chiến thắng vang dội tại trận Bạch Đằng năm 1288 – một trong những trận thủy chiến lừng lẫy nhất lịch sử."
+
+"Dù vậy, triều đình Đại Việt hiểu rằng hòa bình lâu dài chỉ có thể đạt được bằng ngoại giao."
+"Nhờ các chính sách khôn khéo, nhà Trần đã giữ vững độc lập trong bối cảnh nhà Nguyên vẫn ôm tham vọng tái chiến."
+
+"Năm 1294, với cái chết của Hốt Tất Liệt, tham vọng chinh phục Đông Nam Á của nhà Nguyên tan vỡ."
+"Thất bại tại Đại Việt không chỉ là dấu chấm hết cho giấc mộng xâm lăng của Mông Cổ ở Đông Nam Á, mà còn là nguồn cảm hứng cho các quốc gia nhỏ trong khu vực về tinh thần chiến đấu bảo vệ độc lập trước đế chế hùng mạnh nhất thời bấy giờ. "
+
+"Chiến thắng của Đại Việt không chỉ giữ yên bờ cõi mà còn là minh chứng hùng hồn cho sức mạnh đoàn kết dân tộc và trí tuệ quân sự kiệt xuất."
+
+stopSong()
+loadEnd()

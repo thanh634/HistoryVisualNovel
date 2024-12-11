@@ -20,6 +20,13 @@ namespace COMMANDS
 
         new public static void Extend(CommandDatabase database)
         {
+
+            database.AddCommand("entercombat", new Action(EnterCombat));
+            database.AddCommand("loadscene3", new Action(LoadScene3));
+            database.AddCommand("loadscene4", new Action(LoadScene4));
+            database.AddCommand("loadscene5", new Action(LoadScene5));
+            database.AddCommand("loadend", new Action(LoadEnd));
+
             database.AddCommand("playsfx", new Action<string[]>(PlaySFX));
             database.AddCommand("stopsfx", new Action<string>(StopSFX));
 
@@ -33,6 +40,36 @@ namespace COMMANDS
             database.AddCommand("stopambience", new Action<string>(StopAmbience));
         }
 
+        private static void EnterCombat()
+        {
+            Debug.Log("Entering Combat");
+            Loader.Load(Loader.Scene.SetupScene);
+        }
+
+        private static void LoadScene3()
+        {
+            Debug.Log("Loading Scene 3");
+            Loader.Load(Loader.Scene.VisualNovel3);
+        }
+
+        private static void LoadScene4()
+        {
+            Debug.Log("Loading Scene 4");
+            Loader.Load(Loader.Scene.VisualNovel4);
+        }
+
+        private static void LoadScene5()
+        {
+            Debug.Log("Loading Scene 5");
+            Loader.Load(Loader.Scene.VisualNovel5);
+        }
+
+        private static void LoadEnd()
+        {
+            Debug.Log("Loading End Scene");
+            Loader.Load(Loader.Scene.Ending);
+        }
+        
         private static void PlaySFX(string[] data)
         {
             string filePath;

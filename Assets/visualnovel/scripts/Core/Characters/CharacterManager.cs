@@ -88,16 +88,20 @@ namespace CHARACTER
             result.config = config.GetConfig(result.castingName);
 
             result.prefab = GetPrefabForCharacter(result.castingName);
+            Debug.Log("prefab" + result.prefab);
 
             result.rootCharacterFolder = FormatCharacterPath(characterRootPathFormat, result.castingName);
 
+            Debug.Log($"Character '{result.characterName}' created as '{result.castingName}' with config '{result.config}'");
             return result;
         }
 
         private GameObject GetPrefabForCharacter(string characterName)
         {
             string prefabPath = FormatCharacterPath(characterPrefabPathFormat, characterName);
-            return Resources.Load<GameObject>(prefabPath);
+            string modifiedString = prefabPath.Replace("VisualNovelCharater", "character");
+            Debug.Log("prefabPath : " + modifiedString);
+            return Resources.Load<GameObject>(modifiedString);
         }
 
         public string FormatCharacterPath(string path, string characterName) => path.Replace(CHARACTER_NAME_ID, characterName);
