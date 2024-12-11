@@ -14,34 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - name: Tran Nhan Tong
-    alias: Vua
-    characterType: 1
-    nameColor: {r: 0, g: 0, b: 0, a: 1}
-    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
-    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    nameFontSize: 50
-    dialogueFontSize: 35
-  - name: Linh Dai Viet
-    alias: Linh
-    characterType: 1
-    nameColor: {r: 0, g: 0, b: 0, a: 1}
-    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
-    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    nameFontSize: 50
-    dialogueFontSize: 35
-  - name: Linh Nguyen Mong
-    alias: Dich
-    characterType: 1
-    nameColor: {r: 0, g: 0, b: 0, a: 1}
-    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
-    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    nameFontSize: 50
-    dialogueFontSize: 35
-  - name: Tran Hung Dao
-    alias: Hung Dao Vuong
+    alias: vua
     characterType: 1
     nameColor: {r: 0, g: 0, b: 0, a: 1}
     dialogueColor: {r: 0, g: 0, b: 0, a: 1}
@@ -50,7 +23,7 @@ MonoBehaviour:
     nameFontSize: 50
     dialogueFontSize: 35
   - name: Hot Tat Liet
-    alias: Vua Nguyen
+    alias: vuaNguyen
     characterType: 1
     nameColor: {r: 0, g: 0, b: 0, a: 1}
     dialogueColor: {r: 0, g: 0, b: 0, a: 1}
@@ -58,35 +31,8 @@ MonoBehaviour:
     dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
     nameFontSize: 50
     dialogueFontSize: 35
-  - name: Thoat Hoan
-    alias: tuongDich1
-    characterType: 1
-    nameColor: {r: 0, g: 0, b: 0, a: 1}
-    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
-    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    nameFontSize: 50
-    dialogueFontSize: 35
-  - name: Phan Kiep
-    alias: tuongDich2
-    characterType: 1
-    nameColor: {r: 0, g: 0, b: 0, a: 1}
-    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
-    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    nameFontSize: 50
-    dialogueFontSize: 35
-  - name: O Ma Nhi
-    alias: tuongDich3
-    characterType: 1
-    nameColor: {r: 0, g: 0, b: 0, a: 1}
-    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
-    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-    nameFontSize: 50
-    dialogueFontSize: 35
-  - name: Ao Lo Xich
-    alias: tuongDich4
+  - name: Tran Hung Dao
+    alias: daiTuong
     characterType: 1
     nameColor: {r: 0, g: 0, b: 0, a: 1}
     dialogueColor: {r: 0, g: 0, b: 0, a: 1}
@@ -103,7 +49,7 @@ MonoBehaviour:
     dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
     nameFontSize: 50
     dialogueFontSize: 35
-  - name: Nguyen Khoai
+  - name: Tran Quan
     alias: tuong2
     characterType: 1
     nameColor: {r: 0, g: 0, b: 0, a: 1}
@@ -121,7 +67,7 @@ MonoBehaviour:
     dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
     nameFontSize: 50
     dialogueFontSize: 35
-  - name: Tran Quan
+  - name: Nguyen Khoai
     alias: tuong4
     characterType: 1
     nameColor: {r: 0, g: 0, b: 0, a: 1}
@@ -132,6 +78,96 @@ MonoBehaviour:
     dialogueFontSize: 35
   - name: Tran Khanh Du
     alias: tuong5
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: Thoat Hoan
+    alias: tuongDich1
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: Ai Lo
+    alias: tuongDich2
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: O Ma Nhi
+    alias: tuongDich3
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: Trinh Bang Phi
+    alias: tuongDich4
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: Bot Da Cap Dap Nhi
+    alias: tuongDich5
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: Ao Lo Xich
+    alias: tuongDich6
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: Phan Kiep
+    alias: tuongDich7
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: Truong Van Ho
+    alias: tuongDich8
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: Linh Dai Viet
+    alias: linh
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35
+  - name: Linh Nguyen Mong
+    alias: linhDich
     characterType: 1
     nameColor: {r: 0, g: 0, b: 0, a: 1}
     dialogueColor: {r: 0, g: 0, b: 0, a: 1}

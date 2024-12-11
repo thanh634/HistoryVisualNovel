@@ -134,7 +134,10 @@ public static class Sound_Manager {
 	}
     private static void CreateGlobalObject() {
         globalGameObject = new GameObject();
+<<<<<<< HEAD
         Debug.Log("CreateGlobalObject");
+=======
+>>>>>>> mergeCombat
         Object.DontDestroyOnLoad(globalGameObject);
         globalGameObject.AddComponent<MonoBehaviourDummy>();
     }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 60624c39e530379c090742325dcf3919
+=======
+guid: a22712c15c031884cad6eeaf3823c2b6
+>>>>>>> mergeCombat
 timeCreated: 1484171803
 licenseType: Pro
 NativeFormatImporter:

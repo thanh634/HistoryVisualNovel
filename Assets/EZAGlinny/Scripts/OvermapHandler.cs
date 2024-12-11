@@ -26,7 +26,11 @@ public class OvermapHandler {
 
     public static void LoadBackToOvermap() { 
         Debug.Log("abc");
+<<<<<<< HEAD
         Loader.Load(Loader.Scene.MainMenu);
+=======
+        Loader.Load(Loader.Scene.GameScene);
+>>>>>>> mergeCombat
     }
 
     public static void SaveAllCharacterPositions() {

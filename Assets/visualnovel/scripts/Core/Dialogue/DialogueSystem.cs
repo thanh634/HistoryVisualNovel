@@ -66,7 +66,11 @@ namespace DIALOGUE
 
         public void ApplySpeakerDataToDialogueContainer(string speakerName)
         {
+<<<<<<< HEAD
             VisualNovelCharater character = CharacterManager.instance.GetCharacter(speakerName);
+=======
+            VNCharacter character = CharacterManager.instance.GetCharacter(speakerName);
+>>>>>>> mergeCombat
             CharacterConfigData config = character != null ? character.config : CharacterManager.instance.GetCharacterConfig(speakerName);
 
             ApplySpeakerDataToDialogueContainer(config);

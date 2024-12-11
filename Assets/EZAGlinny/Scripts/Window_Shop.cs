@@ -66,7 +66,11 @@ public class Window_Shop : MonoBehaviour {
             shopContents.hasFtnDewArmor = false;
             GameData.GetCharacter(Character.Type.Player).hasFtnDewArmor = true;
             OvermapHandler.SaveAllCharacterPositions();
+<<<<<<< HEAD
             Loader.Load(Loader.Scene.MainMenu);
+=======
+            Loader.Load(Loader.Scene.GameScene);
+>>>>>>> mergeCombat
         }
     }
 

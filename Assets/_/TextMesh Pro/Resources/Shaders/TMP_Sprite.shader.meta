@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 20c8878a8f4214cdf8a0f78172f82fc2
+=======
+guid: fedbf4b6db8137b4383f74f8c1175d6c
+>>>>>>> mergeCombat
 timeCreated: 1450517184
 licenseType: Pro
 ShaderImporter:

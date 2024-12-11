@@ -49,7 +49,10 @@ namespace CodeMonkey.Utils {
 
         // Persist through scene loads
         public static FunctionPeriodic Create_Global(Action action, Func<bool> testDestroy, float timer) {
+<<<<<<< HEAD
             Debug.Log("Create_Global");
+=======
+>>>>>>> mergeCombat
             FunctionPeriodic functionPeriodic = Create(action, testDestroy, timer, "", false, false, false);
             MonoBehaviour.DontDestroyOnLoad(functionPeriodic.gameObject);
             return functionPeriodic;

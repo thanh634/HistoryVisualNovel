@@ -4,7 +4,11 @@ using UnityEngine;
 
 namespace CHARACTER
 {
+<<<<<<< HEAD
     public class Character_Text : VisualNovelCharater
+=======
+    public class Character_Text : VNCharacter
+>>>>>>> mergeCombat
     {
         public Character_Text(string name, CharacterConfigData config) : base(name, config, prefab : null) 
         {

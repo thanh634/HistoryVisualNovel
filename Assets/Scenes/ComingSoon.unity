@@ -220,7 +220,11 @@ GameObject:
   m_Component:
   - component: {fileID: 79197620}
   - component: {fileID: 79197619}
+<<<<<<< HEAD
   - component: {fileID: 79197621}
+=======
+  - component: {fileID: 79197618}
+>>>>>>> mergeCombat
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -228,6 +232,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+=======
+--- !u!114 &79197618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79197617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+>>>>>>> mergeCombat
 --- !u!114 &79197619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +285,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1575375740}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &79197621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +316,8 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+=======
+>>>>>>> mergeCombat
 --- !u!1 &105464379
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +328,10 @@ GameObject:
   m_Component:
   - component: {fileID: 105464381}
   - component: {fileID: 105464380}
+<<<<<<< HEAD
   - component: {fileID: 105464382}
+=======
+>>>>>>> mergeCombat
   m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
@@ -372,6 +405,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1797793838}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &105464382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +450,8 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+=======
+>>>>>>> mergeCombat
 --- !u!1 &135406134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,7 +1835,10 @@ GameObject:
   - component: {fileID: 1065981919}
   - component: {fileID: 1065981918}
   - component: {fileID: 1065981917}
+<<<<<<< HEAD
   - component: {fileID: 1065981921}
+=======
+>>>>>>> mergeCombat
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1830,7 +1869,11 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065981916}
+<<<<<<< HEAD
   m_Enabled: 0
+=======
+  m_Enabled: 1
+>>>>>>> mergeCombat
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
@@ -1889,6 +1932,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1575375740}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1065981921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1933,6 +1977,8 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+=======
+>>>>>>> mergeCombat
 --- !u!1 &1072372607
 GameObject:
   m_ObjectHideFlags: 0

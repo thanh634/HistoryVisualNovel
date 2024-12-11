@@ -11,7 +11,11 @@ namespace CHARACTER
     {
         public string name;
         public string alias;
+<<<<<<< HEAD
         public VisualNovelCharater.CharacterType characterType;
+=======
+        public VNCharacter.CharacterType characterType;
+>>>>>>> mergeCombat
 
         public Color nameColor;
         public Color dialogueColor;
@@ -52,7 +56,11 @@ namespace CHARACTER
 
                 result.name = "";
                 result.alias = "";
+<<<<<<< HEAD
                 result.characterType = VisualNovelCharater.CharacterType.Text;
+=======
+                result.characterType = VNCharacter.CharacterType.Text;
+>>>>>>> mergeCombat
 
                 result.nameColor = new Color(defaultColor.r, defaultColor.g, defaultColor.b, defaultColor.a);
                 result.dialogueColor = new Color(defaultColor.r, defaultColor.g, defaultColor.b, defaultColor.a);

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 7fc05d320229de27d9ecf427591e43c7
+=======
+guid: a6ac4ced820ae9243856fa09412f4a94
+>>>>>>> mergeCombat
 timeCreated: 1425440388
 licenseType: Store
 TextScriptImporter:

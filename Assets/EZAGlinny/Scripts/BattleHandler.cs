@@ -155,8 +155,11 @@ public class BattleHandler {
         }
 
         // Set up Battle Scene
+<<<<<<< HEAD
         //heal all character
         GameData.HealAllCharacter();
+=======
+>>>>>>> mergeCombat
         foreach (Character character in GameData.characterList) {
             if (character.isInPlayerTeam) {
                 LanePosition lanePosition;
@@ -603,7 +606,11 @@ public class BattleHandler {
             }
             //SoundManager.PlaySound(SoundManager.Sound.BattleWin);
             FunctionTimer.Create(() => {
+<<<<<<< HEAD
                 Loader.Load(Loader.Scene.Victory);
+=======
+                Loader.Load(Loader.Scene.Win);
+>>>>>>> mergeCombat
             }, .7f);
             return;
         }

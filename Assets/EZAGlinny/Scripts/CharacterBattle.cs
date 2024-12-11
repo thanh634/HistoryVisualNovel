@@ -151,6 +151,7 @@ public class CharacterBattle : MonoBehaviour {
 
         healthSystem = new HealthSystem(stats.healthMax);
         healthSystem.SetHealthAmount(stats.health);
+<<<<<<< HEAD
         if (isPlayerTeam){
             healthWorldBar = new World_Bar(transform, healthWorldBarLocalPosition, new Vector3(12 * (stats.healthMax / 100f), 1.6f), Color.grey, Color.green, healthSystem.GetHealthPercent(), UnityEngine.Random.Range(1000, 2000), new World_Bar.Outline { color = Color.black, size = .6f });
         }
@@ -158,6 +159,9 @@ public class CharacterBattle : MonoBehaviour {
             healthWorldBar = new World_Bar(transform, healthWorldBarLocalPosition, new Vector3(12 * (stats.healthMax / 100f), 1.6f), Color.grey, Color.red, healthSystem.GetHealthPercent(), UnityEngine.Random.Range(1000, 2000), new World_Bar.Outline { color = Color.black, size = .6f });
         }
         
+=======
+        healthWorldBar = new World_Bar(transform, healthWorldBarLocalPosition, new Vector3(12 * (stats.healthMax / 100f), 1.6f), Color.grey, Color.red, healthSystem.GetHealthPercent(), UnityEngine.Random.Range(1000, 2000), new World_Bar.Outline { color = Color.black, size = .6f });
+>>>>>>> mergeCombat
         healthSystem.OnHealthChanged += HealthSystem_OnHealthChanged;
         healthSystem.OnDead += HealthSystem_OnDead;
 

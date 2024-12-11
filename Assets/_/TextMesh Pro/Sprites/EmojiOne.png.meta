@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f69c936deb65aaa04bb2c95d03fd6848
+=======
+guid: 89b30c9925e08264898b0ee7559cc758
+>>>>>>> mergeCombat
 TextureImporter:
   fileIDToRecycleName:
     21300000: EmojiOne_0

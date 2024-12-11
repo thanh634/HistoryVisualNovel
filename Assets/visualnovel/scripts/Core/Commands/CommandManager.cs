@@ -108,11 +108,19 @@ namespace COMMANDS
             CharacterConfigData characterConfigData = CharacterManager.instance.GetCharacterConfig(args[0]);
             switch (characterConfigData.characterType) 
             {
+<<<<<<< HEAD
                 case VisualNovelCharater.CharacterType.Sprite:
                 case VisualNovelCharater.CharacterType.SpriteSheet:
                     db = subDatabases[DATABASE_CHARACTER_SPRITE];
                     break;
                 case VisualNovelCharater.CharacterType.Live2D:
+=======
+                case VNCharacter.CharacterType.Sprite:
+                case VNCharacter.CharacterType.SpriteSheet:
+                    db = subDatabases[DATABASE_CHARACTER_SPRITE];
+                    break;
+                case VNCharacter.CharacterType.Live2D:
+>>>>>>> mergeCombat
                     break;
             }
 

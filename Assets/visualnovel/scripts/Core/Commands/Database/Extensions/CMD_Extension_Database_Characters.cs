@@ -60,7 +60,11 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_IMMEDIATE, out immediate, defaultValue: false);
 
 
+<<<<<<< HEAD
             VisualNovelCharater character = CharacterManager.instance.CreateCharacter(charName);
+=======
+            VNCharacter character = CharacterManager.instance.CreateCharacter(charName);
+>>>>>>> mergeCombat
 
             if (!enable)
                 return;
@@ -79,7 +83,11 @@ namespace COMMANDS
         public static IEnumerator MoveCharacter(string[] data)
         {
             string characterName = data[0];
+<<<<<<< HEAD
             VisualNovelCharater character = CharacterManager.instance.GetCharacter(characterName);
+=======
+            VNCharacter character = CharacterManager.instance.GetCharacter(characterName);
+>>>>>>> mergeCombat
 
             if (character == null)
                 yield break;
@@ -110,13 +118,21 @@ namespace COMMANDS
 
         public static IEnumerator ShowAll(string[] data)
         {
+<<<<<<< HEAD
             List<VisualNovelCharater> characters = new List<VisualNovelCharater>();
+=======
+            List<VNCharacter> characters = new List<VNCharacter>();
+>>>>>>> mergeCombat
             bool immediate = false;
             float speed = 1f;
 
             foreach (string s in data)
             {
+<<<<<<< HEAD
                 VisualNovelCharater character = CharacterManager.instance.GetCharacter(s, createIfDoesNotExist: false);
+=======
+                VNCharacter character = CharacterManager.instance.GetCharacter(s, createIfDoesNotExist: false);
+>>>>>>> mergeCombat
                 if (character != null) characters.Add(character);
             }
 
@@ -128,7 +144,11 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_IMMEDIATE, out immediate, defaultValue: false);
             parameters.TryGetValue(PARAM_SPEED, out speed, defaultValue: 1f);
 
+<<<<<<< HEAD
             foreach (VisualNovelCharater character in characters)
+=======
+            foreach (VNCharacter character in characters)
+>>>>>>> mergeCombat
             {
                 if (immediate)
                     character.isVisible = true;
@@ -138,7 +158,11 @@ namespace COMMANDS
             if (!immediate)
             {
                 CommandManager.instance.AddTerminationActionToCurrentProcess(() => {
+<<<<<<< HEAD
                     foreach (VisualNovelCharater character in characters)
+=======
+                    foreach (VNCharacter character in characters)
+>>>>>>> mergeCombat
                         character.isVisible = true;
                 });
 
@@ -150,13 +174,21 @@ namespace COMMANDS
 
         public static IEnumerator HideAll(string[] data)
         {
+<<<<<<< HEAD
             List<VisualNovelCharater> characters = new List<VisualNovelCharater>();
+=======
+            List<VNCharacter> characters = new List<VNCharacter>();
+>>>>>>> mergeCombat
             bool immediate = false;
             float speed = 1f;
 
             foreach (string s in data)
             {
+<<<<<<< HEAD
                 VisualNovelCharater character = CharacterManager.instance.GetCharacter(s, createIfDoesNotExist: false);
+=======
+                VNCharacter character = CharacterManager.instance.GetCharacter(s, createIfDoesNotExist: false);
+>>>>>>> mergeCombat
                 if (character != null) characters.Add(character);
             }
 
@@ -169,7 +201,11 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_SPEED, out speed, defaultValue: 1f);
 
 
+<<<<<<< HEAD
             foreach (VisualNovelCharater character in characters)
+=======
+            foreach (VNCharacter character in characters)
+>>>>>>> mergeCombat
             {
                 if (immediate)
                     character.isVisible = false;
@@ -180,7 +216,11 @@ namespace COMMANDS
             if (!immediate)
             {
                 CommandManager.instance.AddTerminationActionToCurrentProcess(() => {
+<<<<<<< HEAD
                     foreach (VisualNovelCharater character in characters)
+=======
+                    foreach (VNCharacter character in characters)
+>>>>>>> mergeCombat
                         character.isVisible = false;
                 });
 
@@ -191,6 +231,7 @@ namespace COMMANDS
 
         public static IEnumerator HighlightAll(string[] data)
         {
+<<<<<<< HEAD
             List<VisualNovelCharater> characters = new List<VisualNovelCharater>();
             bool immediate = false;
             bool handelUnspecifiedCharacters = true;
@@ -199,6 +240,16 @@ namespace COMMANDS
             for (int i = 0; i < data.Length; i++)
             {
                 VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[i], createIfDoesNotExist: false);
+=======
+            List<VNCharacter> characters = new List<VNCharacter>();
+            bool immediate = false;
+            bool handelUnspecifiedCharacters = true;
+            List<VNCharacter> unspecifiedCharacters = new List<VNCharacter>();
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                VNCharacter character = CharacterManager.instance.GetCharacter(data[i], createIfDoesNotExist: false);
+>>>>>>> mergeCombat
                 if (character != null)
                     characters.Add(character);
             }
@@ -211,12 +262,20 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_IMMEDIATE, out immediate, defaultValue: false);
             parameters.TryGetValue(new string[] { "-0", "-only" }, out handelUnspecifiedCharacters, defaultValue: true);
 
+<<<<<<< HEAD
             foreach (VisualNovelCharater character in characters)
+=======
+            foreach (VNCharacter character in characters)
+>>>>>>> mergeCombat
                 character.Highlight(immediate: immediate);
 
             if (handelUnspecifiedCharacters)
             {
+<<<<<<< HEAD
                 foreach (VisualNovelCharater character in CharacterManager.instance.allCharacters)
+=======
+                foreach (VNCharacter character in CharacterManager.instance.allCharacters)
+>>>>>>> mergeCombat
                 {
                     if (characters.Contains(character))
                         continue;
@@ -248,6 +307,7 @@ namespace COMMANDS
 
         public static IEnumerator UnHighlightAll(string[] data)
         {
+<<<<<<< HEAD
             List<VisualNovelCharater> characters = new List<VisualNovelCharater>();
             bool immediate = false;
             bool handelUnspecifiedCharacters = true;
@@ -256,6 +316,16 @@ namespace COMMANDS
             for (int i = 0; i < data.Length; i++)
             {
                 VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[i], createIfDoesNotExist: false);
+=======
+            List<VNCharacter> characters = new List<VNCharacter>();
+            bool immediate = false;
+            bool handelUnspecifiedCharacters = true;
+            List<VNCharacter> unspecifiedCharacters = new List<VNCharacter>();
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                VNCharacter character = CharacterManager.instance.GetCharacter(data[i], createIfDoesNotExist: false);
+>>>>>>> mergeCombat
                 if (character != null)
                     characters.Add(character);
             }
@@ -268,12 +338,20 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_IMMEDIATE, out immediate, defaultValue: false);
             parameters.TryGetValue(new string[] { "-0", "-only" }, out handelUnspecifiedCharacters, defaultValue: true);
 
+<<<<<<< HEAD
             foreach (VisualNovelCharater character in characters)
+=======
+            foreach (VNCharacter character in characters)
+>>>>>>> mergeCombat
                 character.UnHighlight(immediate: immediate);
 
             if (handelUnspecifiedCharacters)
             {
+<<<<<<< HEAD
                 foreach (VisualNovelCharater character in CharacterManager.instance.allCharacters)
+=======
+                foreach (VNCharacter character in CharacterManager.instance.allCharacters)
+>>>>>>> mergeCombat
                 {
                     if (characters.Contains(character))
                         continue;
@@ -307,7 +385,11 @@ namespace COMMANDS
 
         private static IEnumerator Show(string[] data)
         {
+<<<<<<< HEAD
             VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0]);
+=======
+            VNCharacter character = CharacterManager.instance.GetCharacter(data[0]);
+>>>>>>> mergeCombat
 
             if (character == null) yield break;
 
@@ -331,7 +413,11 @@ namespace COMMANDS
 
         private static IEnumerator Hide(string[] data)
         {
+<<<<<<< HEAD
             VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0]);
+=======
+            VNCharacter character = CharacterManager.instance.GetCharacter(data[0]);
+>>>>>>> mergeCombat
 
             if (character == null) yield break;
 
@@ -355,7 +441,11 @@ namespace COMMANDS
 
         public static void SetPriority(string[] data)
         {
+<<<<<<< HEAD
             VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false);
+=======
+            VNCharacter character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false);
+>>>>>>> mergeCombat
             int priority;
 
             if (character == null || data.Length < 2)
@@ -369,7 +459,11 @@ namespace COMMANDS
 
         public static IEnumerator SetColor(string[] data)
         {
+<<<<<<< HEAD
             VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false);
+=======
+            VNCharacter character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false);
+>>>>>>> mergeCombat
             string colorName;
             float speed;
             bool immediate;
@@ -405,7 +499,11 @@ namespace COMMANDS
 
         public static IEnumerator Highlight(string[] data)
         {
+<<<<<<< HEAD
             VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false) as VisualNovelCharater;
+=======
+            VNCharacter character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false) as VNCharacter;
+>>>>>>> mergeCombat
 
             if (character == null)
                 yield break;
@@ -428,7 +526,11 @@ namespace COMMANDS
 
         public static IEnumerator UnHighlight(string[] data)
         {
+<<<<<<< HEAD
             VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false) as VisualNovelCharater;
+=======
+            VNCharacter character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false) as VNCharacter;
+>>>>>>> mergeCombat
 
             if (character == null)
                 yield break;

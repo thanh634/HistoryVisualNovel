@@ -13,7 +13,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.Events;
+=======
+>>>>>>> mergeCombat
 using UnityEngine.UI;
 using CodeMonkey.Utils;
 
@@ -25,6 +28,7 @@ public class MainMenuWindow : MonoBehaviour {
 
     private Transform subMain;
     private Transform subRecipe;
+<<<<<<< HEAD
     private Transform subGuide;
     private Transform abc;
 
@@ -37,6 +41,10 @@ public class MainMenuWindow : MonoBehaviour {
         ShowGuide,
         DoNothing,
     }
+=======
+    private Transform subControls;
+    private Transform subRecipePlay;
+>>>>>>> mergeCombat
 
     private void Awake() {
         foreach (Sub sub in System.Enum.GetValues(typeof(Sub))) {
@@ -47,6 +55,7 @@ public class MainMenuWindow : MonoBehaviour {
         
         SoundManager.Initialize();
 
+<<<<<<< HEAD
 
         subRecipe = transform.Find("subRecipe");
         subGuide = transform.Find("subGuideTerrain");
@@ -106,6 +115,18 @@ public class MainMenuWindow : MonoBehaviour {
             break;
         } 
 
+=======
+        subRecipe = transform.Find("subRecipe");
+
+        ShowSub(Sub.Recipe);
+    }
+
+    private void Update() {
+        // press space to skip
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            subRecipe.gameObject.SetActive(false);
+        }
+>>>>>>> mergeCombat
     }
 
     private void ShowSub(Sub sub) {

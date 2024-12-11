@@ -8,7 +8,11 @@ namespace TESTING
 {
     public class Testing_Character : MonoBehaviour
     {
+<<<<<<< HEAD
         private VisualNovelCharater CreateCharacter(string name) => CharacterManager.instance.CreateCharacter(name);
+=======
+        private VNCharacter CreateCharacter(string name) => CharacterManager.instance.CreateCharacter(name);
+>>>>>>> mergeCombat
 
         // Start is called before the first frame update
         void Start()
@@ -112,7 +116,11 @@ namespace TESTING
         {
             yield return new WaitForSeconds(1);
 
+<<<<<<< HEAD
             VisualNovelCharater linh = CharacterManager.instance.CreateCharacter("Linh Dai Viet");
+=======
+            VNCharacter linh = CharacterManager.instance.CreateCharacter("Linh Dai Viet");
+>>>>>>> mergeCombat
 
             yield return new WaitForSeconds(1);
 

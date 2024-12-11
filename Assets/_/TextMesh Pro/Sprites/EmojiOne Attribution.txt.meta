@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c41e077dabd50ec4481d092432b507b0
+=======
+guid: a691fa05220cdea44b54e59cf03e7d6e
+>>>>>>> mergeCombat
 TextScriptImporter:
   externalObjects: {}
   userData: 

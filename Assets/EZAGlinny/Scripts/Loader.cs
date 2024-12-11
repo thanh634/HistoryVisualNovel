@@ -18,6 +18,7 @@ using UnityEngine.SceneManagement;
 public static class Loader {
 
     public enum Scene {
+<<<<<<< HEAD
         MainMenu,
         VisualNovel,
         Loading,
@@ -27,6 +28,16 @@ public static class Loader {
         Victory,
         Defeat,
         Ending,
+=======
+        GameScene,
+        Loading,
+        BattleScene,
+        Cinematic_1,
+        Cinematic_SleezerWin,
+        GameOver,
+        SetupScene,
+        Win,
+>>>>>>> mergeCombat
     }
 
     private static Scene targetScene;

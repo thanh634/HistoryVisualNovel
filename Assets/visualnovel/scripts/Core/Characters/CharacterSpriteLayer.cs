@@ -27,7 +27,11 @@ namespace CHARACTER
         public bool isLevelingAlpha => co_levelingAlpha != null;
         public bool isChangingColor => co_changingColor != null;
         public bool isFlipping => co_flipping != null;
+<<<<<<< HEAD
         private bool isFacingLeft = VisualNovelCharater.DEFAULT_ORIENTATION_IS_LEFT;
+=======
+        private bool isFacingLeft = VNCharacter.DEFAULT_ORIENTATION_IS_LEFT;
+>>>>>>> mergeCombat
         public CharacterSpriteLayer(Image defaultRenderer, int layer = 0)
         {
             renderer = defaultRenderer;

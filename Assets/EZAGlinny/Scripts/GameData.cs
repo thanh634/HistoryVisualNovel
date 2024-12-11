@@ -190,11 +190,14 @@ public static class GameData {
         }
     }
 
+<<<<<<< HEAD
     public static void HealAllCharacter() {
         for (int i = 0; i < characterList.Count; i++) {
             characterList[i].stats.health = characterList[i].stats.healthMax;
         }
     }
+=======
+>>>>>>> mergeCombat
 
 
 

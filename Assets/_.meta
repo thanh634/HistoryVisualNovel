@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 527b6eebc7243e72ba0f81019f4660cf
+=======
+guid: 4ad70f11d566df74ea78e615ab4e6803
+>>>>>>> mergeCombat
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -419,7 +419,11 @@ public static class Cutscenes {
                 healerCharacter.isInPlayerTeam = true;
                 healerCharacter.subType = Character.SubType.Healer_Friendly;
                 OvermapHandler.SaveAllCharacterPositions();
+<<<<<<< HEAD
                 Loader.Load(Loader.Scene.MainMenu);
+=======
+                Loader.Load(Loader.Scene.GameScene);
+>>>>>>> mergeCombat
             },
         }, true);
     }
@@ -874,7 +878,11 @@ public static class Cutscenes {
             },
             () => {
                 GameData.state = GameData.State.GameOver;
+<<<<<<< HEAD
                 Loader.Load(Loader.Scene.Defeat);
+=======
+                Loader.Load(Loader.Scene.GameOver);
+>>>>>>> mergeCombat
             },
         }, true);
     }

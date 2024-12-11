@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.Events;
 using UnityEngine.UI;
+=======
+>>>>>>> mergeCombat
 using V_AnimationSystem;
 using CodeMonkey.Utils;
 using CodeMonkey.MonoBehaviours;
@@ -38,7 +41,10 @@ public class MoveHandler {
         ChooseCharacter,
         MoveCharacter,
         Busy,
+<<<<<<< HEAD
         BeforeStart,
+=======
+>>>>>>> mergeCombat
     }
 
     public enum MoveDirection
@@ -156,7 +162,11 @@ public class MoveHandler {
 
         SetActiveCharacterBattle(GetAliveTeamCharacterBattleList(true)[0]);
         
+<<<<<<< HEAD
         state = State.BeforeStart;
+=======
+        state = State.ChooseCharacter;
+>>>>>>> mergeCombat
     }
 
     private void ResetCamera() {
@@ -317,10 +327,16 @@ public class MoveHandler {
 
     public void Update() {
         switch (state) {
+<<<<<<< HEAD
         case State.BeforeStart:
             break;
         case State.ChooseCharacter:
             
+=======
+        case State.ChooseCharacter:
+            // Player Turn
+
+>>>>>>> mergeCombat
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) {
                 // Select Target Up
                 SetActiveCharacterBattle(GetNextCharacterBattle(activeCharacterBattle.GetLanePosition(), MoveDirection.Up, true));
@@ -417,6 +433,7 @@ public class MoveHandler {
 
             break;
         }
+<<<<<<< HEAD
 
         // catch Ctrl + S to save the game
         if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.S)) {
@@ -430,6 +447,8 @@ public class MoveHandler {
     {
         Debug.Log("SkipGuide");
         state = State.ChooseCharacter;
+=======
+>>>>>>> mergeCombat
     }
 
     public void SaveGame()
@@ -459,7 +478,11 @@ public class MoveHandler {
             GameData.GetCharacter(Character.Type.Healer).stats.health = 1;
             GameData.state = GameData.State.LostToEvilMonster_1;
 
+<<<<<<< HEAD
             Loader.Load(Loader.Scene.MainMenu);
+=======
+            Loader.Load(Loader.Scene.Cinematic_1);
+>>>>>>> mergeCombat
             //OvermapHandler.LoadBackToOvermap();
             break;
         case GameData.State.FightingEvilMonster_2:
@@ -470,7 +493,11 @@ public class MoveHandler {
             GameData.GetCharacter(Character.Type.Healer).stats.health = 1;
             GameData.state = GameData.State.LostToEvilMonster_2;
 
+<<<<<<< HEAD
             Loader.Load(Loader.Scene.MainMenu);
+=======
+            Loader.Load(Loader.Scene.Cinematic_1);
+>>>>>>> mergeCombat
             //OvermapHandler.LoadBackToOvermap();
             break;
         case GameData.State.FightingEvilMonster_3:
@@ -478,7 +505,11 @@ public class MoveHandler {
             character.isDead = true;
             GameData.state = GameData.State.DefeatedEvilMonster;
             
+<<<<<<< HEAD
             Loader.Load(Loader.Scene.MainMenu);
+=======
+            Loader.Load(Loader.Scene.Cinematic_SleezerWin);
+>>>>>>> mergeCombat
             //OvermapHandler.LoadBackToOvermap();
             break;
         }

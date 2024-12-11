@@ -8,7 +8,11 @@ using static TreeEditor.TextureAtlas;
 
 namespace CHARACTER
 {
+<<<<<<< HEAD
     public class Character_Sprite : VisualNovelCharater
+=======
+    public class Character_Sprite : VNCharacter
+>>>>>>> mergeCombat
     {
         private const string SPRITE_RENDERER_PARENT_NAME = "Renderers";
         private const string SPRITESHEET_DEFAULT_SHEETNAME = "Default";

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 081aa5b5cda29151a85c1c1d25531e85
+=======
+guid: 9227359acfa08df4d93bebd462aed51f
+>>>>>>> mergeCombat
 timeCreated: 1480316860
 licenseType: Pro
 TextScriptImporter:

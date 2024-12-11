@@ -1,0 +1,396 @@
+﻿CreateCharacter("vua as Tran Nhan Tong"), MoveCharacter(vua -x 0 -spd 10 -sm false), vua.UnHighlight()
+CreateCharacter("daiTuong as Tran Hung Dao"), MoveCharacter(daiTuong -x 0 -spd 10 -sm false), daiTuong.UnHighlight()
+CreateCharacter("tuong1 as Tran Nhat Duat"), MoveCharacter(tuong1 -x 0 -spd 10 -sm false), tuong1.UnHighlight()
+CreateCharacter("tuong2 as Tran Quan"), MoveCharacter(tuong2 -x 0 -spd 10 -sm false), tuong2.UnHighlight()
+CreateCharacter("tuong3 as Tran Gia"), MoveCharacter(tuong3 -x 0 -spd 10 -sm false), tuong3.UnHighlight()
+CreateCharacter("tuong4 as Nguyen Khoai"), MoveCharacter(tuong4 -x 0 -spd 10 -sm false), tuong4.UnHighlight()
+CreateCharacter("tuong5 as Tran Khanh Du"), MoveCharacter(tuong5 -x 0 -spd 10 -sm false), tuong5.UnHighlight()
+CreateCharacter("linh1 as Linh Dai Viet"), linh1.SetSprite(-s 1), MoveCharacter(linh1 -x 0 -spd 10 -sm false), linh1.UnHighlight()
+CreateCharacter("linh2 as Linh Dai Viet"), MoveCharacter(linh2 -x 0 -spd 10 -sm false), linh2.UnHighlight()
+
+CreateCharacter("vuaNguyen as Hot Tat Liet"), MoveCharacter(vuaNguyen -x 1 -spd 10 -sm false), vuaNguyen.UnHighlight()
+CreateCharacter("tuongDich1 as Thoat Hoan"), MoveCharacter(tuongDich1 -x 1 -spd 10 -sm false), tuongDich1.Highlight()
+CreateCharacter("tuongDich2 as Ai Lo"), MoveCharacter(tuongDich2 -x 1 -spd 10 -sm false), tuongDich2.UnHighlight()
+CreateCharacter("tuongDich3 as O Ma Nhi"), MoveCharacter(tuongDich3 -x 1 -spd 10 -sm false), tuongDich3.UnHighlight()
+CreateCharacter("tuongDich4 as Trinh Bang Phi"), MoveCharacter(tuongDich4 -x 1 -spd 10 -sm false), tuongDich4.UnHighlight()
+CreateCharacter("tuongDich5 as Bot Da Cap Dap Nhi"), MoveCharacter(tuongDich5 -x 1 -spd 10 -sm false), tuongDich5.UnHighlight()
+CreateCharacter("tuongDich6 as Ao Lo Xich"), MoveCharacter(tuongDich6 -x 1 -spd 10 -sm false), tuongDich6.UnHighlight()
+CreateCharacter("tuongDich7 as Phan Kiep"), MoveCharacter(tuongDich7 -x 1 -spd 10 -sm false), tuongDich7.UnHighlight()
+CreateCharacter("tuongDich8 as Truong Van Ho"), MoveCharacter(tuongDich8 -x 1 -spd 10 -sm false), tuongDich8.UnHighlight()
+CreateCharacter("linhDich1 as Linh Nguyen Mong"), MoveCharacter(linhDich1 -x 1 -spd 10 -sm false), linhDich1.UnHighlight()
+CreateCharacter("linhDich2 as Linh Nguyen Mong"), linhDich2.SetSprite(-s 2), MoveCharacter(linhDich2 -x 1 -spd 10 -sm false), linhDich2.UnHighlight()
+
+
+SetLayerMedia(background main/keo-quan-thuy/keo-quan-thuy-1)
+narrator "=========Chương 3 : Thăng Long - Vân Đồn - Quân Nguyên trúng kế ========="
+
+"-- Hồi 1: Thủy chiến Vân Đồn - Chiến bại --"
+MoveCharacter(tuongDich1 -x 0 -spd 10 -sm false), tuongDich1.Highlight()
+
+
+"Quân Nguyên tuy được huy động rất nhiều, nhưng nổi lên vấn đề tiếp tế lương ăn do đường hành quân xa và đi lại hiểm trở ở Đại Việt."
+"Chính vì thế mà Hốt Tất Liệt cùng triều đình Nguyên Mông đã rất chú trọng vào việc tiếp tế lương thảo trong lần tiến quân này."
+"Chúng chọn vận tải lương thảo bằng đường thủy, đi ngay bên cạnh đạo thủy binh của quân Nguyên tiến công vào cửa biển Đại Việt."
+
+"Trương Văn Hổ nhận lệnh chỉ huy đoàn thuyền lương gồm 70 chiếc thuyền chở 170.000 thạch lương được đoàn thuyền chiến của Ô Mã Nhi đi trước hộ tống."
+"Từ Khâm Châu (Quảng Đông, Trung Quốc) theo đường biển đông bắc tiến vào Đại Việt, đến ngày 17/12/1287 thì bắt đầu xuất phát."
+
+"Nếu số lương thực được chuyển đến an toàn thì quân Nguyên yên tâm về mặt hậu cần, không phải lo cướp lương ăn như những lần xâm lược trước."
+
+SetLayerMedia(background main/thanh-tri/dung-truoc-thanh-2)
+Show(tuongDich1 linhDich1)
+Thoát Hoan "Tình hình quân lương của chúng ta thế nào ?"
+
+tuongDich1.UnHighlight(), linhDich1.Highlight()
+Lính Nguyên Mông "Bẩm chủ tướng, ước tính chỉ còn cầm cự được trong vòng 1 tháng."
+
+tuongDich1.Highlight(), linhDich1.UnHighlight()
+Thoát Hoan "Không cần lo lắng, thuyền lương của Trương Văn Hổ đang trên đường tới rồi."
+
+tuongDich1.UnHighlight(), linhDich1.Highlight()
+Lính Nguyên Mông "Thưa chủ tướng, liệu có nguy cơ bọn An Nam đánh phá tiếp tế của ta trên đường vận chuyển ?"
+
+tuongDich1.Highlight(), linhDich1.UnHighlight()
+Thoát Hoan "Hà Hà, Hưng Đạo Vương từ bỏ Vạn Kiếp mà cố gắng cầm cừ nơi ven vùng nước như con rùa rụt cổ, ngươi nghĩ có cơ may nào bọn chúng dám to gan mà tấn công thuyền lương của ta?"
+"Vả lại còn có chiến thuyền của Ô Mã Nhi dẫn đường, ai dám phá thuyền lương của ta chứ?"
+tuongDich1.UnHighlight(), Hide(tuongDich1 linhDich1)
+
+SetLayerMedia(background main/ban-do/ban-do-1)
+narrator "Nắm được kế hoạch tiến công của quân Nguyên, nhà Trần huy động sức mạnh toàn dân và tích cực chủ động đề ra kế hoạch đánh giặc."
+"Các đạo quân chủ lực được bố trí trên các hướng tiến quân của địch."
+
+SetLayerMedia(background main/giao-chien-tren-bo/chien-dau-3)
+"Quân ta vừa tổ chức chặn đánh kiềm chế, tiêu hao sinh lực địch trên các tuyến đường bộ ở biên giới phía bắc vừa tập trung lực lượng tăng cường phòng thủ đường biển."
+
+SetLayerMedia(background main/ban-do/ban-do-2)
+"Một lực lượng thủy binh mạnh được bố trí trên vùng biển đông bắc, một vùng địa bàn chiến lược trọng yếu nhằm tiêu diệt thủy quân và phá hủy lương thực của giặc."
+
+SetLayerMedia(background main/hoi-thoai/ban-kiem-1)
+"Nhân Huệ Vương Trần Khánh Dư, một trong những viên tướng dũng mãnh của nhà Trần được phong làm phó tướng, chỉ huy đánh giặc ở đây."
+
+SetLayerMedia(background main/ban-do/ban-do-2)
+"Xác định vùng biển đông bắc là địa bàn trọng yếu; chọn tướng giỏi giao trọng trách, điều này chứng tỏ bộ chỉ huy thống soái nhà Trần nắm rất chắc ý đồ của giặc nên đã quyết tâm làm thất bại kế hoạch hậu cần của quân Nguyên ngay từ đầu"
+
+SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-2)
+"Người tính không bằng trời tính, khi thủy binh của quân Nguyên đi vào vùng biển nước ta, chúng bị thủy binh ta chặn đánh ở Ngọc Sơn do Trần Gia chỉ huy (Mũi Ngọc, Móng Cái)"
+"Tuy nhiên do chênh lệch lực lượng, đoàn thuyền của Ô Mã Nhi và Phàn Tiếp đã chiến thắng va vẫn tiếp tục tiến quân."
+
+SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-1)
+"Rồi chạm mặt với đạo thủy quân lớn của Trần Khánh Dư tại Vân Đồn nhưng vẫn đi qua được."
+"Thủy quân Đại Việt giao chiến với binh thuyền giặc nhưng không đủ sức tiêu diệt chúng: \"Khi ấy, thủy quân nhà Nguyên đánh Vân Đồn. … Khánh Dư đánh nhau với giặc bị thua\"."
+[wait]ClearLayerMedia(background -b hurricane)
+
+SetLayerMedia(background main/that-bai/tu-tran-1)
+"-- Hồi 2: Thủy chiến Vân Đồn - Đại phá thuyền lương --"
+
+MoveCharacter(linh1 -x 1 -spd 10 -sm false), linh1.Highlight()
+MoveCharacter(tuong5 -x 1 -spd 10 -sm false), tuong5.Highlight()
+"Không ngăn được thủy binh quân Nguyên, Trần Khánh Dư và quân tướng của ông chưa hoàn thành được nhiệm vụ trọng yếu triều đình giao cho."
+"Được tin thủy quân ta không thắng giặc, nhà Trần lập tức cho Trung sứ tới Vân Đồn triệu Khánh Dư về kinh đô trị tội cho dù Khánh Dư là thân vương rất được trọng dụng."
+"Nhưng “quân pháp vô thân”, nhà Trần thực hiện rất nghiêm về kỷ luật quân đội."
+
+SetLayerMedia(background main/ban-do/ban-do-2)
+Show(linh1 vua)
+Lính Đại Việt "Bẩm thượng hoàng, bẩm bệ hạ, cửa An Ban của phó tướng Nhân Huệ Vương đã thất thủ rồi."
+
+linh1.UnHighlight(), vua.Highlight()
+Vua Trần Nhân Tông "Hừ, Nhân Huệ Vương. Người đâu, tới An Ban áp giải Nhân Huệ Vương về đây nghiêm trị!"
+vua.UnHighlight(), Hide(vua linh1)
+
+SetLayerMedia(background main/hoi-thoai/doc-chieu-1)
+linh2.Highlight(), Show(linh2 tuong5)
+Trung Sứ "Nhân Huệ Vương Trần Khánh Dư, mau ra tiếp thánh chỉ !"
+SetLayerMedia(background main/hoi-thoai/doc-chieu-2)
+Trung Sứ "Vua cho rằng nhà người tinh thông binh pháp, có tài cầm quân mà được phân phó nhiệm vụ quan trọng là chặn đánh thủy binh quân Nguyên, không cho chúng hội quân ở Vạn Kiếp. "
+
+Trung Sứ "Tuy nhiên nhà người không những chặn đánh thất bại, không tiêu hao bao nhiêu binh lực địch mà còn đem về tổn thất đáng kể cho dân quân ta, theo quân luật bị điều về hoàng cung nhận phạt!"
+
+linh2.UnHighlight(), tuong5.Highlight()
+Trần Khánh Dư "Lấy quân luật mà xử, tôi xin chịu tội, nhưng xin hoãn cho vài ba ngày, để tôi lập công chuộc tội, rồi sẽ chịu búa rìu cũng chưa muộn"
+tuong5.UnHighlight(), Hide(tuong5 linh2)
+
+SetLayerMedia(background main/ban-do/ban-do-1)
+narrator "Mặc dù không đánh bại được thủy binh Nguyên nhưng Trần Khánh Dư vẫn nhận thấy ông còn có cơ hội lập công." 
+"Ô Mã Nhi và Phàn Tiếp tưởng đường tiến quân của chúng không còn có gì trở ngại thì vội theo sông Bạch Đằng tiến về Vạn Kiếp để nhanh chóng hội quân với Thoát Hoan theo như kế hoạch đã định."
+"Cứ như thế đoàn thuyền vận lương nặng nề của Trương Văn Hổ bị bỏ lại phía sau."
+
+SetLayerMedia(background main/hoi-thoai/thang-tran-tren-song)
+"Khánh Dư tiên lượng giặc vẫn còn ở phía sau, các thuyền lương và một bộ phận thủy quân đi với thuyền lương của chúng chưa tới."
+"Mặc dù vừa thua trận nhưng Trần Khánh Dư vẫn đủ tỉnh táo, chấn chỉnh lại lực lượng."
+
+"Khánh Dư nhanh chóng mai phục tấn công đoàn thuyền lương của Trương Văn Hổ, lúc này chở nặng, di chuyển chậm chạp, không có đạo thủy binh của Ô Mã Nhi hộ tống, sức chiến đấu bị hạn chế."
+MoveCharacter(tuong5 -x 0 -spd 10 -sm false), tuong5.Highlight()
+
+SetLayerMedia(background main/ban-do/ban-do-2)
+"Tuy thời gian rất ngắn nhưng thủy binh Đại Việt đã kịp thời dàn trận chờ giặc tới để tiêu diệt."
+"Trần Khánh Dư tổ chức trận địa phục kích tại Vân Đồn (Cẩm Phả) và Cửa Lục (Hòn Gai), theo trình tự mạnh dần về phía Cửa Lục."
+
+SetLayerMedia(background main/chuong-gio)
+"Tại doanh trại Vân Đồn,..."
+
+SetLayerMedia(background main/mai-phuc/mai-phuc-song)
+show(tuong5 linh1)
+Trần Khánh Dư "Chúng sẽ đi qua đây, dọc theo Vân Đồn và Cửa Lục.{a} Thuyền nặng lương thực, tốc độ của chúng chậm như rùa.{a} Đây là cơ hội không thể bỏ lỡ!"
+
+tuong5.UnHighlight(), linh1.Highlight()
+Tướng lĩnh "Xin theo lệnh tướng quân, quyết lập công vì Đại Việt!"
+
+tuong5.Highlight(), linh1.UnHighlight()
+Trần Khánh Dư "Nhớ kỹ, chúng ta không chỉ đánh một trận, mà phải đánh liên tục, không cho chúng thở.{a} Từ Vân Đồn đến Cửa Lục, từng đội phải yểm trợ lẫn nhau."
+tuong5.UnHighlight(), Hide(tuong5 linh1)
+
+SetLayerMedia(background main/keo-quan-thuy/keo-quan-thuy-2)
+narrator "Tháng 12 âm lịch (5/1 đến 2/2/1288), yên chí có quân của Ô Mã Nhi đi trước dọn đường, Trương Văn Hỗ cho đoàn thuyền chở nặng lương thực và khí giới chậm chạp tiến vào Hạ Long, chúng không ngờ bị rơi vào trận địa phục kích của quân ta."
+
+"Trận phục kích tại Vân Đồn..."
+
+SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-2)
+"Khi đoàn thuyền vừa tiến vào vùng biển Vân Đồn, bất ngờ, những chiếc thuyền nhỏ của quân Đại Việt từ các vịnh nhỏ lao ra như tên bắn."
+
+Lính Đại Việt "Xông lên!{a} Đánh chìm thuyền giặc!"
+
+Lính Nguyên Mông "Có mai phục!{a} Quân Đại Việt đang tấn công!{a} Mau sẵn sàng đánh trả, bảo vệ thuyền lương!"
+
+tuongDich8.Highlight(), Show(tuongDich8)
+Trương Văn Hổ "Dàn đội hình phòng thủ!{a} Đừng để thuyền bị phá!{a} Đẩy chúng ra!"
+tuongDich8.UnHighlight(), MoveCharacter(tuongDich8 -x 0.5 -spd 1 -sm true), tuong5.Highlight()
+
+SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-1)
+narrator "Tuy nhiên, thuyền của quân Nguyên quá nặng nề, không thể di chuyển linh hoạt."
+"Từng chiếc bị quân Đại Việt áp sát, đánh chìm hoặc phóng hỏa."
+
+tuong5.Highlight(), Show(tuong5), [wait]MoveCharacter(tuong5 -x 0.5 -spd 1 -sm true), MoveCharacter(tuongDich8 -x 0.6 -spd 1 -sm true), MoveCharacter(tuong5 -x 0.4 -spd 1 -sm true)
+Trần Khánh Dư "Không để chúng thoát!{a} Đánh chặn đầu và khóa đuôi!{a} Đẩy chúng đến Cửa Lục, nơi sẽ là mồ chôn của bọn chúng!"
+tuong5.UnHighlight()
+
+narrator "Cuốc chiến kéo dài lan đến tại Cửa Lục..."
+SetLayerMedia(background main/giao-chien-tren-thuy/di-thuyen-nho-1)
+"Đoàn thuyền Nguyên tiến gần đến Cửa Lục, tưởng đã thoát khỏi vòng vây, nhưng thủy binh Đại Việt từ khắp các nhánh sông bất ngờ tràn ra."
+Hide(linh1)
+
+SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-2)
+MoveCharacter(tuongDich8 -x 0.5 -spd 1 -sm true), MoveCharacter(tuong5 -x 0 -spd 1 -sm true), tuongDich8.Highlight()
+Trương Văn Hổ "Chúng từ đâu ra lắm thế này?{a} Rút lui!{a} Mau rút lui!"
+
+linhDich2.Highlight(), tuongDich8.UnHighlight(), show(linhDich2)
+Lính Nguyên Mông "Khúc sông này cạn quá, thuyền ta lại nặng không thể đi nhanh được!"
+
+SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-1)
+linhDich2.UnHighlight(), tuong5.Highlight()
+Trần Khánh Dư "Phóng tên!{a} Đánh chìm tất cả thuyền của chúng!"
+tuong5.UnHighlight()
+
+narrator "Tên từ hai bên bờ trút xuống như mưa, lửa cháy lan khắp mặt biển."
+"Quân Nguyên vừa chống trả vừa tìm cách tháo chạy nhưng bị đánh tan tành."
+MoveCharacter(linhDich2 -x 2 -spd 1 -sm true)
+SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-2)
+"Toàn bộ lương thực và khí giới của quân Nguyên bị nhấn chìm xuống biển."
+"Phần lớn đoàn thuyền bị phá hủy, quân lính bị tiêu diệt hoặc bắt sống."
+
+MoveCharacter(tuongDich8 -x 2 -spd 1 -sm true)
+Hide(tuongDich8 linhDich2), MoveCharacter(tuongDich8 -x 1 -spd 10 -sm false), MoveCharacter(linhDich2 -x 1 -spd 10 -sm false)
+"Về phần Trương Văn Hổ, hắn may mắn thoát chết, chạy về Quỳnh Châu trên một chiếc thuyền nhỏ, mang theo nỗi nhục lớn lao của quân Nguyên."
+
+SetLayerMedia(background main/hoi-thoai/thang-tran-tren-song)
+MoveCharacter(linh2 -x 0.6 -spd 10 -sm false), MoveCharacter(linh1 -x 0.8 -spd 10 -sm false)
+tuong5.Highlight(), show(linh1 linh2)
+Trần Khánh Dư "Các tướng sĩ, trận này quân ta đã thắng lớn! 
+Đoàn thuyền lương của giặc Nguyên bị phá tan, toàn bộ lương thảo và khí giới của chúng đều chìm sâu dưới biển. 
+Đây là công lao của toàn thể anh em, không một ai bị bỏ sót."
+
+tuong5.UnHighlight(), linh1.Highlight()
+Lính Đại Việt "Bẩm tướng quân, quân giặc quả thật không ngờ tới!"
+"Bọn chúng cứ nghĩ có quân của Ô Mã Nhi đi trước mở đường là an toàn, nào ngờ lại rơi vào trận địa của ta."
+
+linh1.UnHighlight(), linh2.Highlight()
+Lính Đại Việt "Lần này, cả thủy binh Đại Việt đã hợp sức làm nên kỳ tích."
+"Quân giặc vừa phải chống đỡ, vừa bị đánh dọc chặng đường hàng chục dặm."
+"Đến Cửa Lục thì hoàn toàn tan tác, đúng là trời cũng giúp ta!"
+
+linh2.UnHighlight(), tuong5.Highlight()
+Trần Khánh Dư "Đúng vậy, nhưng không chỉ là nhờ trời."
+"Sự tỉnh táo và tinh thần quả cảm của các ngươi mới là yếu tố quyết định."
+"Nếu không chấn chỉnh kịp thời sau thất bại trước thủy quân Ô Mã Nhi, chúng ta đã không thể mai phục thành công thế này."
+tuong5.UnHighlight()
+Hide(tuong5 linh1 linh2)
+
+SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-1)
+narrator "Tin thắng trận lập tức được báo về triều đình, Thượng hoàng tha tội trước không hỏi đến, Trần Khánh Dư và quân của ông đã chuộc được tội trước đây để cho thủy quân của Ô Mã Nhi qua được Vân Đồn."
+
+SetLayerMedia(background main/thanh-tri/dung-truoc-thanh-2 -b hurricane)
+
+"-- Hồi 3: Rời bỏ Thăng Long --"
+MoveCharacter(tuongDich1 -x 0 -spd 10 -sm false), tuongDich1.Highlight()
+
+"Thoát Hoan chưa nghe tin thuyền lương của Trương Văn Hổ đến, tạm thời vẫn cho rằng việc hành quân di chuyển lương ăn bị chậm trễ chứ chưa biết đoàn thuyền lương đã bị quân ta đánh cho tan tác."
+"Cùng lúc này thì Ô Mã Nhi đã hội quân ở Vạn Kiếp."
+
+"Trong đại doanh của Thoát Hoan ở Gia Lâm"
+show(tuongDich1 tuongDich4)
+Thoát Hoan "Tại sao thuyền lương của Trương Văn Hổ vẫn chưa tới?"
+"Chậm trễ thế này thì làm sao đảm bảo đủ lương thực cho đại quân?"
+
+tuongDich1.UnHighlight(), tuongDich4.Highlight()
+Trịnh Bằng Phi "Thưa Nguyên soái, có lẽ do đường xa, vận chuyển khó khăn nên đoàn thuyền lương đến muộn.{a} Không có tin tức về việc bị tấn công."
+
+tuongDich1.Highlight(), tuongDich4.UnHighlight()
+Thoát Hoan "Được rồi.{a} Hãy tập trung quân, tiếp tục tiến đánh Thăng Long như kế hoạch đã định."
+"Bọn Đại Việt đã nhiều lần dùng chiêu lui binh, nhưng ta sẽ không để chúng thoát lần này!"
+tuongDich1.UnHighlight(), Hide(tuongDich1 tuongDich4)
+
+SetLayerMedia(background main/keo-quan-thuy/keo-quan-thuy-2)
+narrator "Tại Vạn Kiếp, quân Ô Mã Nhi hội quân"
+show(tuongDich3 tuongDich7), MoveCharacter(tuongDich3 -x 0 -spd 1 -sm true), tuongDich3.Highlight()
+Ô Mã Nhi "Các ngươi, chuẩn bị cánh thủy binh!"
+"Lần này không chỉ đánh, mà phải truy kích đến cùng!{a} Hưng Đạo Vương không còn đường lui đâu."
+
+tuongDich3.UnHighlight(), tuongDich7.Highlight()
+Phàn Tiếp "Thưa tướng quân, chỉ cần thủy bộ phối hợp, chúng ta sẽ đánh chiếm Thăng Long dễ dàng!"
+
+tuongDich3.Highlight(), tuongDich7.UnHighlight()
+Ô Mã Nhi "Đúng vậy.{a} Nhưng hãy nhớ, đừng khinh địch."
+"Hưng Đạo Vương là một kẻ giảo hoạt. Nếu sơ suất, chính ta sẽ xử lý các ngươi!"
+tuongDich3.UnHighlight(), Hide(tuongDich3 tuongDich7)
+
+SetLayerMedia(background main/ban-do/ban-do-2)
+narrator "Thủy bộ quân Nguyên hướng về phía Thăng Long đánh phá những cứ điểm tiền tiêu của quân ta lấn dần từng bước một."
+MoveCharacter(tuong1 -x 1 -spd 10 -sm false), daiTuong.Highlight()
+
+SetLayerMedia(background main/mai-phuc/mai-phuc-song)
+"Trên sông Đuống: Quân Trần vừa đánh vừa rút"
+
+Show(daiTuong tuong1),
+Trần Hưng Đạo "Phải giữ vững các cứ điểm.{a} Đánh xong là lui ngay, không được để chúng phát hiện ý đồ rút quân khỏi Thăng Long!"
+
+daiTuong.UnHighlight(), tuong1.Highlight()
+Trần Nhật Duật "Thưa Quốc Công, quân Nguyên đông và mạnh.{a} Chúng ta liệu có cầm chân được lâu không?"
+
+daiTuong.Highlight(), tuong1.UnHighlight()
+Trần Hưng Đạo "Khi thế dẫu hung hãn cũng chỉ là một đám ô hợp, sớm sẽ làm thuyền buồm gãy cánh mà mắc cạn."
+"Ta đã bày sẵn mai phục khắp nơi.{a} Cứ đánh và rút, để chúng tự kiệt sức mà không biết."
+daiTuong.UnHighlight(), Hide(daiTuong tuong1)
+
+SetLayerMedia(background main/thanh-tri/dung-truoc-thanh-2)
+"Quân Nguyên chiếm Thăng Long"
+Show(tuongDich1), tuongDich1.Highlight(), MoveCharacter(tuongDich1 -x 0.6 -spd 1 -sm true)
+Thoát Hoan "Ha!{wa 1} Cuối cùng cũng chiếm được kinh thành!{a} Xem bọn Đại Việt còn trốn ở đâu!"
+
+tuongDich1.UnHighlight(), tuongDich4.Highlight(), show(tuongDich4)
+Trịnh Bằng Phi "Thưa Nguyên soái, kinh thành hoàn toàn trống rỗng!{a} Không còn người, không còn lương thực, chỉ có vài đội cảm tử quân đánh chặn."
+
+tuongDich1.Highlight(), tuongDich4.UnHighlight()
+Thoát Hoan "Lại là cái kế ‘thanh dã’ này!{a} Lũ Đại Việt thật ngoan cố!"
+tuongDich1.UnHighlight(), MoveCharacter(tuongDich1 -x 2 -spd 1 -sm true), Hide(tuongDich4)
+
+SetLayerMedia(background main/giao-chien-tren-bo/chien-dau-tren-bo-1)
+narrator "Cuộc truy đuổi vua Trần"
+
+Hide(tuongDich1), Show(tuongDich3 tuongDich7), tuongDich3.Highlight(), MoveCharacter(tuongDich3 -x 0.7 -spd 1 -sm true)
+Ô Mã Nhi "Truy đuổi!{a} Bọn chúng rút theo hướng hạ lưu sông Hồng.{a} Ta nhất định phải bắt được vua Trần!"
+MoveCharacter(tuongDich1 -x 1 -spd 10 -sm false)
+
+tuongDich3.UnHighlight(), tuongDich7.Highlight()
+Phàn Tiếp "Thưa tướng quân, quân Trần đã có viện binh phía trước.{a} Nếu tiếp tục truy kích, e rằng chúng ta sẽ rơi vào bẫy."
+
+tuongDich3.Highlight(), tuongDich7.UnHighlight()
+Ô Mã Nhi "Hừ, bọn này không dễ đối phó.{a} Rút quân tạm thời, nhưng hãy cử người canh chừng sát sao."
+"Ta không tin chúng có thể thoát mãi."
+tuongDich3.UnHighlight(), Hide(tuongDich3 tuongDich7)
+
+SetLayerMedia(background main/keo-quan-bo/keo-quan-1)
+narrator "Trong lúc đó, cánh quân Nguyên ở Vân Nam tiến xuống nước ta từ hướng Tây Bắc cũng hội quân tại kinh thành vừa chiếm được."
+"Thoát Hoan không hề biết rằng, lương thảo của quân Nguyên đã bị nhấn chìm, và cuộc hành trình về sau sẽ không chỉ là truy kích, mà còn là một thảm họa chờ đợi phía trước."
+[wait]SetLayerMedia(background main/chuong-gio -b hurricane)
+
+"-- Hồi 4: Cuộc khủng hoảng lương thực của quân Nguyên --"
+
+[wait]SetLayerMedia(background main/thanh-tri/dung-truoc-thanh-2)
+MoveCharacter(tuongDich1 -x 0 -spd 10 -sm false), tuongDich1.Highlight()
+"Tại đại doanh Thoát Hoan  ở Thăng Long"
+
+Show(tuongDich1 tuongDich4 tuongDich3)
+Thoát Hoan "Thuyền lương của Trương Văn Hổ đã chậm hơn dự kiến quá lâu."
+"Nếu tiếp tục thế này, đại quân sẽ cạn lương."
+
+tuongDich1.UnHighlight(), tuongDich4.Highlight()
+Phàn Tiếp "Nguyên soái, có lẽ nên phái quân ra biển để đón đoàn thuyền.{a} Việc này không thể chậm trễ thêm nữa."
+
+tuongDich1.Highlight(), tuongDich4.UnHighlight()
+Thoát Hoan "Ô Mã Nhi, ngươi dẫn thủy quân ra An Bang.{a} Bằng mọi giá phải tìm và bảo vệ đoàn thuyền lương!"
+
+tuongDich3.Highlight(), tuongDich1.UnHighlight()
+Ô Mã Nhi "Tuân lệnh Nguyên soái!{a} Tôi sẽ trở về với tin tức tốt."
+tuongDich3.UnHighlight(), Hide(tuongDich1 tuongDich3 tuongDich4)
+
+[wait]SetLayerMedia(background main/giao-chien-tren-thuy/thuy-chien-2)
+narrator "Trên biến An Bang"
+
+[wait]MoveCharacter(tuongDich3 -x 0 -spd 10 -sm false), tuongDich3.Highlight(), Show(tuongDich3)
+Ô Mã Nhi "Không có dấu vết nào của đoàn thuyền...{wa 2} Lẽ nào chúng đã bị đánh tan?"
+
+MoveCharacter(linhDich1 -x 0.6 -spd 1 -sm true), linhDich1.Highlight(), Show(linhDich1), tuongDich3.UnHighlight()
+Lính Nguyên Mông "Thưa Đại tướng, quân Đại Việt đã phục kích tại Vân Đồn và Cửa Lục!{a} Thuyền lương bị nhấn chìm sạch"
+
+tuongDich3.Highlight(), linhDich1.UnHighlight()
+Ô Mã Nhi "Lại là bọn Trần Khánh Dư!{a} Không thể nào, đoàn thuyền lương đã bị tiêu diệt sạch sao?"
+"Mau báo tin cho nguyên soái ngay!{a} Lập tức về Thăng Long hội quân"
+tuongDich3.UnHighlight(), Hide(tuongDich3 linhDich1)
+
+SetLayerMedia(background main/thanh-tri/dung-truoc-thanh-1)
+narrator "Tại đại doanh Thoát Hoan ở Thăng Long"
+tuongDich1.Highlight(), Show(tuongDich1 tuongDich4)
+Thoát Hoan "Thuyền lương mất sạch? Làm sao ta có thể tiếp tục đóng quân ở đây mà không có lương thực?"
+
+tuongDich4.Highlight(), tuongDich1.UnHighlight()
+Trịnh Bằng Phi "Thưa Nguyên soái, không chỉ thiếu lương, quân Trần đã cắt đứt các tuyến đường từ Thăng Long về Vạn Kiếp.{a} Chúng ta đang bị bao vây."
+
+tuongDich1.Highlight(), tuongDich4.UnHighlight()
+Thoát Hoan "Hưng Đạo Vương quả là kẻ khó đối phó.{a} Không thể mạo hiểm nữa, phải rút quân về Vạn Kiếp ngay lập tức!"
+tuongDich1.UnHighlight()
+
+SetLayerMedia(background main/ban-do/ban-do-2)
+MoveCharacter(tuongDich1 -x 1 -spd 1 -sm true), MoveCharacter(tuongDich4 -x 0.8 -spd 1 -sm true)
+narrator "Thoát Hoan quyết định rút quân về Vạn Kiếp, trên đường đi bị quân Đại Việt mai phục đánh từng trận nhỏ.{a} Tuy nhiên cuối cùng cũng đã rút được toàn quân về Vạn Kiếp"
+
+tuongDich1.Highlight()
+Thoát Hoan "Đã về được đây, nhưng lương thực vẫn không còn."
+"Tình hình này không thể kéo dài.{a} Phải làm sao để chống đỡ?"
+
+tuongDich1.UnHighlight(), tuongDich4.Highlight()
+Trịnh Bằng Phi "Thưa Nguyên soái, chúng ta có thể đi cướp bóc lương thực từ các làng mạc xung quanh để tạm thời cầm cự."
+
+tuongDich1.Highlight(), tuongDich4.UnHighlight()
+Thoát Hoan "Được, nhưng đó chỉ là giải pháp ngắn hạn.{a} Nếu không có kế hoạch lâu dài, đại quân sẽ tan rã."
+"Mau gấp rút thực hiện, cướp càng nhiều càng tốt. Ta sẽ cho quân báo tin để xin viện trợ thêm lương thảo."
+tuongDich1.UnHighlight(), Hide(tuongDich1 tuongDich4)
+
+SetLayerMedia(background main/mai-phuc/mai-phuc-song)
+narrator "Tại doanh trại Đại Việt"
+
+linh2.Highlight(), Show(linh2 daiTuong)
+Lính Đại Việt "Thưa Đại vương, toàn bộ thuyền lương của giặc đã bị tiêu diệt tại Vân Đồn. 
+Chúng đang rơi vào cảnh đói kém, buộc phải rút về Vạn Kiếp."
+
+daiTuong.Highlight(), linh2.UnHighlight()
+Trần Hưng Đạo "Tốt lắm!{a} Chiến thắng này không chỉ làm giặc mất lương thực mà còn phá vỡ toàn bộ kế hoạch hậu cần của chúng."
+"Từ đây, chúng không thể gượng dậy được nữa."
+
+SetLayerMedia(background main/giao-chien-tren-bo/chien-dau-2)
+
+"Liên tục tổ chức các đợt tấn công vào Vạn Kiếp, làm tiêu hao sinh lực của địch."
+daiTuong.UnHighlight(), Hide(daiTuong linh2)
+
+narrator "Quân Trần liên tục tập kích, đánh tiêu hao sinh lực khiến binh sĩ quân Nguyên kiệt sức."
+"Lương thực không còn, không thể cầm cự ở Vạn Kiếp. Lựa chọn duy nhất của Thoát Hoan là rút quân khỏi Đại Việt."
+"Vậy là, từ chiến thắng tại Vân Đồn, quân dân Đại Việt đã thành công bẻ gãy hoàn toàn kế hoạch xâm lược của giặc Nguyên, đẩy chúng vào thế bế tắc và buộc phải tháo chạy khỏi Đại Việt trong nhục nhã."
+[wait]ClearLayerMedia(background -b hurricane)
+
+choice "Tiếp tục ?"
+{
+	-Tiếp Chương 4
+		Load("Chuong 4")
+	-Xem Lại Chương 3
+		Load("Chuong 3")
+	-Về Mục lục
+		Load("Muc Luc")
+}

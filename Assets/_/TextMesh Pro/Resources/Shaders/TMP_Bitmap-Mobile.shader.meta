@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3066c13039288939e89789edc81ce2cc
+=======
+guid: ad79007c46f1a724c8ac262725e311f4
+>>>>>>> mergeCombat
 ShaderImporter:
   defaultTextures: []
   userData: 
