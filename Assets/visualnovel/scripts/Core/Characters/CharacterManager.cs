@@ -10,8 +10,8 @@ namespace CHARACTER
     public class CharacterManager : MonoBehaviour
     {
         public static CharacterManager instance { get; private set; }
-        public Character[] allCharacters => characters.Values.ToArray();
-        private Dictionary<string, Character> characters = new Dictionary<string, Character>();
+        public VNCharacter[] allCharacters => characters.Values.ToArray();
+        private Dictionary<string, VNCharacter> characters = new Dictionary<string, VNCharacter>();
 
         private CharacterConfigSO config => DialogueSystem.instance.config.CharacterConfigurationAsset;
 
@@ -34,7 +34,7 @@ namespace CHARACTER
         {
             if(!getOriginal)
             {
-                Character character = GetCharacter(name);
+                VNCharacter character = GetCharacter(name);
                 if (character != null)
                     return character.config;
 
@@ -43,7 +43,7 @@ namespace CHARACTER
             return config.GetConfig(name);
         }
 
-        public Character GetCharacter(string name, bool createIfDoesNotExist = false)
+        public VNCharacter GetCharacter(string name, bool createIfDoesNotExist = false)
         {
             if(characters.ContainsKey(name.ToLower()))
                 return characters[name.ToLower()];
@@ -56,7 +56,7 @@ namespace CHARACTER
 
         public bool HasCharacter(string name) => characters.ContainsKey(name.ToLower());
 
-        public Character CreateCharacter(string characterName, bool revealAfterCreated = false)
+        public VNCharacter CreateCharacter(string characterName, bool revealAfterCreated = false)
         {
             if (characters.ContainsKey(characterName.ToLower()))
             {
@@ -66,7 +66,7 @@ namespace CHARACTER
 
             CHARACTER_INFO info = GetCharInfo(characterName);
 
-            Character character = CreateCharacterFromInfo(info);
+            VNCharacter character = CreateCharacterFromInfo(info);
 
             characters.Add(info.characterName.ToLower(), character);
             
@@ -102,20 +102,20 @@ namespace CHARACTER
 
         public string FormatCharacterPath(string path, string characterName) => path.Replace(CHARACTER_NAME_ID, characterName);
 
-        private Character CreateCharacterFromInfo(CHARACTER_INFO info)
+        private VNCharacter CreateCharacterFromInfo(CHARACTER_INFO info)
         { 
             CharacterConfigData config = info.config;
 
             switch(config.characterType)
             {
-                case Character.CharacterType.Text:
+                case VNCharacter.CharacterType.Text:
                     return new Character_Text(info.characterName, config);
 
-                case Character.CharacterType.Sprite:
-                case Character.CharacterType.SpriteSheet:
+                case VNCharacter.CharacterType.Sprite:
+                case VNCharacter.CharacterType.SpriteSheet:
                     return new Character_Sprite(info.characterName, config, info.prefab, info.rootCharacterFolder);
 
-                case Character.CharacterType.Live2D:
+                case VNCharacter.CharacterType.Live2D:
                     return new Character_Live2D(info.characterName, config, info.prefab, info.rootCharacterFolder);
 
                 default:
@@ -126,8 +126,8 @@ namespace CHARACTER
 
         public void SortCharacters()
         {
-            List<Character> activeChars = characters.Values.Where(c => c.root.gameObject.activeInHierarchy && c.isVisible).ToList();
-            List<Character> inactiveChars = characters.Values.Except(activeChars).ToList();
+            List<VNCharacter> activeChars = characters.Values.Where(c => c.root.gameObject.activeInHierarchy && c.isVisible).ToList();
+            List<VNCharacter> inactiveChars = characters.Values.Except(activeChars).ToList();
 
             activeChars.Sort((a, b) => a.priority.CompareTo(b.priority));
             activeChars.Concat(inactiveChars);
@@ -137,14 +137,14 @@ namespace CHARACTER
 
         public void SortCharacters(string[] characterNames)
         {
-            List<Character> sortedCharacter = new List<Character>();
+            List<VNCharacter> sortedCharacter = new List<VNCharacter>();
 
             sortedCharacter = characterNames
                 .Select(name => GetCharacter(name))
                 .Where(character => character != null)
                 .ToList();
 
-            List<Character> remainingCharacters = characters.Values
+            List<VNCharacter> remainingCharacters = characters.Values
                 .Except(sortedCharacter)
                 .OrderBy(character => character.priority)
                 .ToList();
@@ -154,19 +154,19 @@ namespace CHARACTER
             int startingPriority = remainingCharacters.Count > 0 ? remainingCharacters.Max(c => c.priority) : 0;
             for (int i = 0; i < sortedCharacter.Count; i++)
             {
-                Character character = sortedCharacter[i];
+                VNCharacter character = sortedCharacter[i];
                 character.SetPriority(startingPriority + i + 1, autoSortCharacterOnUI: false);
             }
 
             sortedCharacter.Reverse();
-            List<Character> allChars = remainingCharacters.Concat(sortedCharacter).ToList();
+            List<VNCharacter> allChars = remainingCharacters.Concat(sortedCharacter).ToList();
             SortCharacter(allChars);
         }
 
-        private void SortCharacter(List<Character> charactersSortOrder)
+        private void SortCharacter(List<VNCharacter> charactersSortOrder)
         {
             int i = 0;
-            foreach (Character character in charactersSortOrder)
+            foreach (VNCharacter character in charactersSortOrder)
             {
                 Debug.Log($"{character.name} priority is: {character.priority}");
                 character.root.SetSiblingIndex(i++);

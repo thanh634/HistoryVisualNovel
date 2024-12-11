@@ -1,48 +1,67 @@
+HideUI(-i true)
+narrator "dummy text", HideDB(-i true), SetLayerMedia(background main/keo-quan-bo/keo-quan-1), ShowUI(-i true)
 
-
+CreateCharacter("tuongDich1 as Thoat Hoan"), MoveCharacter(tuongDich1 -x 0 -spd 10 -sm false), tuongDich1.Highlight()
+CreateCharacter("tuongDich2 as Ai Lo"), MoveCharacter(tuongDich2 -x 1 -spd 10 -sm false), tuongDich2.UnHighlight()
 narrator "================ Chương 2 : Cơn Sóng Giông Từ Phương Bắc ================"
 "-- Hồi 1: Phương Bắc kéo giông --"
 
 "Ngày 3 tháng 9 âm lịch, Thoát Hoan khởi binh từ đất Ngạc, dựng cờ đưa \"An Nam quốc vương\" Trần Ích Tắc trở về nước, danh nghĩa là hòa bình, thực chất là âm mưu xâm lược Đại Việt."
+
 "Quân Nguyên chia thành ba cánh lớn, mỗi cánh mang trong mình sức mạnh tàn phá khủng khiếp."
 
-Thoát Hoan "Ái Lỗ, ngươi dẫn quân theo đường Vân Nam, vượt sông Thao và sông Lô, tái hiện chiến tích của những lần trước. 
-Hãy nhanh chóng dọn đường!"
+Show(tuongDich1 tuongDich2)
+Thoát Hoan "Ái Lỗ, ngươi dẫn quân theo đường Vân Nam, vượt sông Thao và sông Lô, tái hiện chiến tích của những lần trước.{a} Hãy nhanh chóng dọn đường!"
 
+tuongDich1.UnHighlight(), tuongDich2.Highlight()
 Ái Lỗ "Bẩm vương tử, thần sẽ không phụ lòng mong đợi!"
 
-Thoát Hoan "Ngươi và Bột Đa Cáp Đáp Nhĩ mang quân Hán tiến về Chi Lăng. 
-Phải nhanh chóng chiếm lấy các ải trọng yếu. 
-Ta cùng quân chủ lực sẽ theo đường Sơn Động tiến thẳng vào kinh thành."
+tuongDich2.UnHighlight(), tuongDich1.Highlight()
+Thoát Hoan "Ngươi và Bột Đa Cáp Đáp Nhĩ mang quân Hán tiến về Chi Lăng, nhanh chóng chiếm lấy các ải trọng yếu."
+"Ta cùng quân chủ lực sẽ theo đường Sơn Động tiến thẳng vào kinh thành."
 
-Ô Mã Nhi "Còn ta, hạm đội của ta sẽ xuyên qua cửa biển Vạn Ninh, thẳng sông Bạch Đằng mà tiến. 
-Lần này hạm đội ta quyết cho nhà Trần phải ôm hận."
+CreateCharacter("tuongDich3 as O Ma Nhi"), [wait]MoveCharacter(tuongDich3 -x 0 -spd 10 -sm false)
+tuongDich1.UnHighlight(), MoveCharacter(tuongDich1 -x 0.2 -spd 1 -sm false), Show(tuongDich3)
+Ô Mã Nhi "Còn ta, hạm đội của ta sẽ xuyên qua cửa biển Vạn Ninh, thẳng sông Bạch Đằng mà tiến."
+"Lần này hạm đội ta quyết cho nhà Trần phải ôm hận."
 
-"Ba cánh quân Nguyên như rồng như hổ đồng loạt hành quân. 
+Hide(tuongDich1 tuongDich2 tuongDich3), SetLayerMedia(background main/keo-quan-bo/keo-quan-4)
+narrator "Ba cánh quân Nguyên như rồng như hổ đồng loạt hành quân."
 
-Cánh thứ nhất theo đường Vân Nam tiến xuống sông Thao và sông Lô, do Ái Lỗ thống lĩnh, chuẩn bị tái diễn những bước chân tàn phá như hai lần trước."
+"Cánh thứ nhất theo đường Vân Nam tiến xuống sông Thao và sông Lô, do Ái Lỗ thống lĩnh, chuẩn bị tái diễn những bước chân tàn phá như hai lần trước."
 
-"Cánh thứ hai là quân chủ lực đi từ châu Khâm, châu Liêm, với Thoát Hoan, Trình Bằng Phi và Áo Lỗ Xích chỉ huy. 
-Theo sau, Trần Ích Tắc lẽo đẽo như một quân bài chính trị bị lợi dụng."
+SetLayerMedia(background main/ban-do/ban-do-1)
+"Cánh thứ hai là quân chủ lực đi từ châu Khâm, châu Liêm, với Thoát Hoan, Trình Bằng Phi và Áo Lỗ Xích chỉ huy."
+"Theo sau, Trần Ích Tắc lẽo đẽo như một quân bài chính trị bị lợi dụng."
 
-"Cánh thứ ba là thủy quân, với 500 chiến thuyền do Ô Mã Nhi và Phàn Tiếp dẫn dắt. 
-Cùng đội vận lương do Trương Văn Hổ phụ trách, chúng như những con rồng đang bò dọc bờ biển Đại Việt, hướng về cửa sông Bạch Đằng"
+SetLayerMedia(background main/keo-quan-thuy/keo-quan-thuy-1)
+"Cánh thứ ba là thủy quân, với 500 chiến thuyền do Ô Mã Nhi và Phàn Tiếp dẫn dắt."
+"Cùng đội vận lương do Trương Văn Hổ phụ trách, chúng như những con rồng đang bò dọc bờ biển Đại Việt, hướng về cửa sông Bạch Đằng"
 
-"Phía Đại Việt, Hưng Đạo Vương Trần Quốc Tuấn sắp xếp lực lượng phòng thủ chặt chẽ. 
-Ông chia quân giữ các vị trí trọng yếu: Nguyễn Khoái giữ Lạng Sơn, Trần Khánh Dư trấn thủ Vân Đồn, còn ông tự đóng quân tại Quảng Yên."
+SetLayerMedia(background main/ban-do/ban-do-2)
+"Phía Đại Việt, Hưng Đạo Vương Trần Quốc Tuấn sắp xếp lực lượng phòng thủ chặt chẽ."
+"Ông chia quân giữ các vị trí trọng yếu: Nguyễn Khoái giữ Lạng Sơn, Trần Khánh Dư trấn thủ Vân Đồn, còn ông tự đóng quân tại Quảng Yên."
 
+[wait]SetLayerMedia(background main/chuong-gio)
 "Tại phủ Thiên Trường,..."
+CreateCharacter("vua as Tran Nhan Tong")
+CreateCharacter("daiTuong as Tran Hung Dao"), daiTuong.UnHighlight()
 
-Vua Trần Nhân Tông "Thoát Hoan lần này chia quân ba ngả, thế địch không nhỏ. 
-Xin hỏi Quốc Công, năm nay đánh giặc thế nào?"
+[wait]SetLayerMedia(background main/hoi-thoai/vua-tuong-noi-chuyen)
+show(vua daiTuong)
+Vua Trần Nhân Tông "Thoát Hoan lần này chia quân ba ngả, thế địch không nhỏ."
+"Xin hỏi Quốc Công, năm nay đánh giặc thế nào?"
 
-Trần Hưng Đạo "Năm nay đánh giặc nhàn!"
+vua.UnHighlight(), daiTuong.Highlight()
+Trần Hưng Đạo "Bẩm Đức vua. Năm nay đánh giặc nhàn!"
 
--- Hồi 2: Gió Nổi Tại Biên Giới --
+narrator "-- Hồi 2: Gió Nổi Tại Biên Giới --"
 
-"Ngày 25 tháng 12 năm 1287, cánh quân của Thoát Hoan vượt biên giới tiến vào Đại Việt. 
-Quân Nguyên triển khai theo kế hoạch"
+SetLayerMedia(background main/keo-quan-bo/keo-quan-1)
+"Ngày 25 tháng 12 năm 1287, cánh quân của Thoát Hoan vượt biên giới tiến vào Đại Việt."
+"Quân Nguyên triển khai theo kế hoạch"
 
+SetLayerMedia(background main/keo-quan-bo/keo-quan-1)
 "Ái Lỗ dẫn quân từ Vân Nam, sớm vượt sông Thao và giao chiến với quân Trần Nhật Duật tại Bạch Hạc. 
 Sau trận đánh ác liệt, quân Đại Việt thất thế, hai tướng Lê Thạch và Hà Anh tử trận."
 

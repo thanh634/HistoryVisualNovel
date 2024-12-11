@@ -11,7 +11,7 @@ namespace CHARACTER
     {
         public string name;
         public string alias;
-        public Character.CharacterType characterType;
+        public VNCharacter.CharacterType characterType;
 
         public Color nameColor;
         public Color dialogueColor;
@@ -52,7 +52,7 @@ namespace CHARACTER
 
                 result.name = "";
                 result.alias = "";
-                result.characterType = Character.CharacterType.Text;
+                result.characterType = VNCharacter.CharacterType.Text;
 
                 result.nameColor = new Color(defaultColor.r, defaultColor.g, defaultColor.b, defaultColor.a);
                 result.dialogueColor = new Color(defaultColor.r, defaultColor.g, defaultColor.b, defaultColor.a);

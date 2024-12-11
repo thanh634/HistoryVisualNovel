@@ -8,7 +8,7 @@ namespace TESTING
 {
     public class Testing_Character : MonoBehaviour
     {
-        private Character CreateCharacter(string name) => CharacterManager.instance.CreateCharacter(name);
+        private VNCharacter CreateCharacter(string name) => CharacterManager.instance.CreateCharacter(name);
 
         // Start is called before the first frame update
         void Start()
@@ -112,7 +112,7 @@ namespace TESTING
         {
             yield return new WaitForSeconds(1);
 
-            Character linh = CharacterManager.instance.CreateCharacter("Linh Dai Viet");
+            VNCharacter linh = CharacterManager.instance.CreateCharacter("Linh Dai Viet");
 
             yield return new WaitForSeconds(1);
 

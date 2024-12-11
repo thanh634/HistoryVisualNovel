@@ -5,7 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/SetupScene.unity
+    guid: 3606297dca0e6abccbe02ff1b54b438a
+  - enabled: 0
+    path: Assets/Scenes/Loading.unity
+    guid: 3c3ef28c0676e62568fb4585bf9fa157
+  - enabled: 0
+    path: Assets/Scenes/LoadingToBattle.unity
+    guid: 2179c55ebdd474298a5ea6b84e3effb4
+  - enabled: 0
+    path: Assets/Scenes/BattleScene.unity
+    guid: 7cfab46cecbb794af95087dc024c95c9
+  - enabled: 0
+    path: Assets/Scenes/GameScene.unity
+    guid: 81bc473609993529d9b6fbcbcfe08632
+  - enabled: 0
+    path: Assets/Scenes/Win.unity
+    guid: c246c360737dedcd3b72e740565343b6
+  - enabled: 0
+    path: Assets/Scenes/ComingSoon.unity
+    guid: 5631b19d9a4f731859aac251e43354c7
+  - enabled: 1
+    path: Assets/Scenes/VNScene.unity
+    guid: 3580a62ac26128445ad055b9d5e09b18
   m_configObjects: {}

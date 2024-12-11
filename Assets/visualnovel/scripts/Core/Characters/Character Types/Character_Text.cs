@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace CHARACTER
 {
-    public class Character_Text : Character
+    public class Character_Text : VNCharacter
     {
         public Character_Text(string name, CharacterConfigData config) : base(name, config, prefab : null) 
         {

@@ -8,7 +8,7 @@ using static TreeEditor.TextureAtlas;
 
 namespace CHARACTER
 {
-    public class Character_Sprite : Character
+    public class Character_Sprite : VNCharacter
     {
         private const string SPRITE_RENDERER_PARENT_NAME = "Renderers";
         private const string SPRITESHEET_DEFAULT_SHEETNAME = "Default";

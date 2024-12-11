@@ -139,3 +139,12 @@ MonoBehaviour:
     dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
     nameFontSize: 50
     dialogueFontSize: 35
+  - name: Ai Lo
+    alias: tuongDich5
+    characterType: 1
+    nameColor: {r: 0, g: 0, b: 0, a: 1}
+    dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+    nameFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    nameFontSize: 50
+    dialogueFontSize: 35

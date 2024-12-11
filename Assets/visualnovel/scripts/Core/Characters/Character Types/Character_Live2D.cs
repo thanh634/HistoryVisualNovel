@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace CHARACTER
 {
-    public class Character_Live2D : Character
+    public class Character_Live2D : VNCharacter
     {
         public Character_Live2D(string name, CharacterConfigData config, GameObject prefab, string rootAssetFolder) : base(name, config, prefab)
         {
