@@ -60,7 +60,7 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_IMMEDIATE, out immediate, defaultValue: false);
 
 
-            Character character = CharacterManager.instance.CreateCharacter(charName);
+            VisualNovelCharater character = CharacterManager.instance.CreateCharacter(charName);
 
             if (!enable)
                 return;
@@ -79,7 +79,7 @@ namespace COMMANDS
         public static IEnumerator MoveCharacter(string[] data)
         {
             string characterName = data[0];
-            Character character = CharacterManager.instance.GetCharacter(characterName);
+            VisualNovelCharater character = CharacterManager.instance.GetCharacter(characterName);
 
             if (character == null)
                 yield break;
@@ -110,13 +110,13 @@ namespace COMMANDS
 
         public static IEnumerator ShowAll(string[] data)
         {
-            List<Character> characters = new List<Character>();
+            List<VisualNovelCharater> characters = new List<VisualNovelCharater>();
             bool immediate = false;
             float speed = 1f;
 
             foreach (string s in data)
             {
-                Character character = CharacterManager.instance.GetCharacter(s, createIfDoesNotExist: false);
+                VisualNovelCharater character = CharacterManager.instance.GetCharacter(s, createIfDoesNotExist: false);
                 if (character != null) characters.Add(character);
             }
 
@@ -128,7 +128,7 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_IMMEDIATE, out immediate, defaultValue: false);
             parameters.TryGetValue(PARAM_SPEED, out speed, defaultValue: 1f);
 
-            foreach (Character character in characters)
+            foreach (VisualNovelCharater character in characters)
             {
                 if (immediate)
                     character.isVisible = true;
@@ -138,7 +138,7 @@ namespace COMMANDS
             if (!immediate)
             {
                 CommandManager.instance.AddTerminationActionToCurrentProcess(() => {
-                    foreach (Character character in characters)
+                    foreach (VisualNovelCharater character in characters)
                         character.isVisible = true;
                 });
 
@@ -150,13 +150,13 @@ namespace COMMANDS
 
         public static IEnumerator HideAll(string[] data)
         {
-            List<Character> characters = new List<Character>();
+            List<VisualNovelCharater> characters = new List<VisualNovelCharater>();
             bool immediate = false;
             float speed = 1f;
 
             foreach (string s in data)
             {
-                Character character = CharacterManager.instance.GetCharacter(s, createIfDoesNotExist: false);
+                VisualNovelCharater character = CharacterManager.instance.GetCharacter(s, createIfDoesNotExist: false);
                 if (character != null) characters.Add(character);
             }
 
@@ -169,7 +169,7 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_SPEED, out speed, defaultValue: 1f);
 
 
-            foreach (Character character in characters)
+            foreach (VisualNovelCharater character in characters)
             {
                 if (immediate)
                     character.isVisible = false;
@@ -180,7 +180,7 @@ namespace COMMANDS
             if (!immediate)
             {
                 CommandManager.instance.AddTerminationActionToCurrentProcess(() => {
-                    foreach (Character character in characters)
+                    foreach (VisualNovelCharater character in characters)
                         character.isVisible = false;
                 });
 
@@ -191,14 +191,14 @@ namespace COMMANDS
 
         public static IEnumerator HighlightAll(string[] data)
         {
-            List<Character> characters = new List<Character>();
+            List<VisualNovelCharater> characters = new List<VisualNovelCharater>();
             bool immediate = false;
             bool handelUnspecifiedCharacters = true;
-            List<Character> unspecifiedCharacters = new List<Character>();
+            List<VisualNovelCharater> unspecifiedCharacters = new List<VisualNovelCharater>();
 
             for (int i = 0; i < data.Length; i++)
             {
-                Character character = CharacterManager.instance.GetCharacter(data[i], createIfDoesNotExist: false);
+                VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[i], createIfDoesNotExist: false);
                 if (character != null)
                     characters.Add(character);
             }
@@ -211,12 +211,12 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_IMMEDIATE, out immediate, defaultValue: false);
             parameters.TryGetValue(new string[] { "-0", "-only" }, out handelUnspecifiedCharacters, defaultValue: true);
 
-            foreach (Character character in characters)
+            foreach (VisualNovelCharater character in characters)
                 character.Highlight(immediate: immediate);
 
             if (handelUnspecifiedCharacters)
             {
-                foreach (Character character in CharacterManager.instance.allCharacters)
+                foreach (VisualNovelCharater character in CharacterManager.instance.allCharacters)
                 {
                     if (characters.Contains(character))
                         continue;
@@ -248,14 +248,14 @@ namespace COMMANDS
 
         public static IEnumerator UnHighlightAll(string[] data)
         {
-            List<Character> characters = new List<Character>();
+            List<VisualNovelCharater> characters = new List<VisualNovelCharater>();
             bool immediate = false;
             bool handelUnspecifiedCharacters = true;
-            List<Character> unspecifiedCharacters = new List<Character>();
+            List<VisualNovelCharater> unspecifiedCharacters = new List<VisualNovelCharater>();
 
             for (int i = 0; i < data.Length; i++)
             {
-                Character character = CharacterManager.instance.GetCharacter(data[i], createIfDoesNotExist: false);
+                VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[i], createIfDoesNotExist: false);
                 if (character != null)
                     characters.Add(character);
             }
@@ -268,12 +268,12 @@ namespace COMMANDS
             parameters.TryGetValue(PARAM_IMMEDIATE, out immediate, defaultValue: false);
             parameters.TryGetValue(new string[] { "-0", "-only" }, out handelUnspecifiedCharacters, defaultValue: true);
 
-            foreach (Character character in characters)
+            foreach (VisualNovelCharater character in characters)
                 character.UnHighlight(immediate: immediate);
 
             if (handelUnspecifiedCharacters)
             {
-                foreach (Character character in CharacterManager.instance.allCharacters)
+                foreach (VisualNovelCharater character in CharacterManager.instance.allCharacters)
                 {
                     if (characters.Contains(character))
                         continue;
@@ -307,7 +307,7 @@ namespace COMMANDS
 
         private static IEnumerator Show(string[] data)
         {
-            Character character = CharacterManager.instance.GetCharacter(data[0]);
+            VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0]);
 
             if (character == null) yield break;
 
@@ -331,7 +331,7 @@ namespace COMMANDS
 
         private static IEnumerator Hide(string[] data)
         {
-            Character character = CharacterManager.instance.GetCharacter(data[0]);
+            VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0]);
 
             if (character == null) yield break;
 
@@ -355,7 +355,7 @@ namespace COMMANDS
 
         public static void SetPriority(string[] data)
         {
-            Character character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false);
+            VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false);
             int priority;
 
             if (character == null || data.Length < 2)
@@ -369,7 +369,7 @@ namespace COMMANDS
 
         public static IEnumerator SetColor(string[] data)
         {
-            Character character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false);
+            VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false);
             string colorName;
             float speed;
             bool immediate;
@@ -405,7 +405,7 @@ namespace COMMANDS
 
         public static IEnumerator Highlight(string[] data)
         {
-            Character character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false) as Character;
+            VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false) as VisualNovelCharater;
 
             if (character == null)
                 yield break;
@@ -428,7 +428,7 @@ namespace COMMANDS
 
         public static IEnumerator UnHighlight(string[] data)
         {
-            Character character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false) as Character;
+            VisualNovelCharater character = CharacterManager.instance.GetCharacter(data[0], createIfDoesNotExist: false) as VisualNovelCharater;
 
             if (character == null)
                 yield break;

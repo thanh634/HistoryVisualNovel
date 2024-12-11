@@ -7,7 +7,7 @@ using TMPro;
 
 namespace CHARACTER
 {
-    public abstract class Character
+    public abstract class VisualNovelCharater
     {
         public const bool ENABLE_ON_START = false;
         private const float UNHIGHLIGHTED_DARKEN_STRENGTH = 0.65f;
@@ -47,7 +47,7 @@ namespace CHARACTER
         public bool isFacingRight => !facingLeft;
         public bool isFliping => co_fliping != null;
 
-        public Character(string name, CharacterConfigData config, GameObject prefab)
+        public VisualNovelCharater(string name, CharacterConfigData config, GameObject prefab)
         { 
             this.name = name;
             displayName = name;

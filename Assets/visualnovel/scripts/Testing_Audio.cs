@@ -12,7 +12,7 @@ namespace TESTING
         {
             StartCoroutine(Running());
         }
-        Character CreateCharacter(string name) => CharacterManager.instance.CreateCharacter(name);
+        VisualNovelCharater CreateCharacter(string name) => CharacterManager.instance.CreateCharacter(name);
         // Update is called once per frame
         IEnumerator Running()
         {

@@ -8,14 +8,14 @@ namespace TESTING
 {
     public class Testing_Character : MonoBehaviour
     {
-        private Character CreateCharacter(string name) => CharacterManager.instance.CreateCharacter(name);
+        private VisualNovelCharater CreateCharacter(string name) => CharacterManager.instance.CreateCharacter(name);
 
         // Start is called before the first frame update
         void Start()
         {
-            //Character vua = CharacterManager.instance.CreateCharacter("Tran Nhan Tong");
-            //Character tranhungdao = CharacterManager.instance.CreateCharacter("Tran Hung Dao");
-            //Character vuabunhin = CharacterManager.instance.CreateCharacter("Tran Nhan Tong");
+            //VisualNovelCharater vua = CharacterManager.instance.CreateCharacter("Tran Nhan Tong");
+            //VisualNovelCharater tranhungdao = CharacterManager.instance.CreateCharacter("Tran Hung Dao");
+            //VisualNovelCharater vuabunhin = CharacterManager.instance.CreateCharacter("Tran Nhan Tong");
 
             StartCoroutine(Test2());
         }
@@ -25,7 +25,7 @@ namespace TESTING
             /*
             
             // Create a character using "Linh Dai Viet" sprite
-            Character linh1 = CharacterManager.instance.CreateCharacter("Linh Dai Viet");
+            VisualNovelCharater linh1 = CharacterManager.instance.CreateCharacter("Linh Dai Viet");
 
             // Create a sprite character using "Linh Dai Viet" sprite, this one have name, and can do many other stuff below
             Character_Sprite linh1 = CreateCharacter("Linh1 as Linh Dai Viet") as  Character_Sprite;
@@ -112,7 +112,7 @@ namespace TESTING
         {
             yield return new WaitForSeconds(1);
 
-            Character linh = CharacterManager.instance.CreateCharacter("Linh Dai Viet");
+            VisualNovelCharater linh = CharacterManager.instance.CreateCharacter("Linh Dai Viet");
 
             yield return new WaitForSeconds(1);
 

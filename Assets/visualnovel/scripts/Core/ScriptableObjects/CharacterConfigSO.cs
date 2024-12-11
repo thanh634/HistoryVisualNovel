@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace CHARACTER
 {
-    [CreateAssetMenu(fileName = "Character Configuration Asset", menuName = "Dialogue System/Character Configuration Asset") ]
+    [CreateAssetMenu(fileName = "VisualNovelCharater Configuration Asset", menuName = "Dialogue System/VisualNovelCharater Configuration Asset") ]
     public class CharacterConfigSO : ScriptableObject
     {
         public CharacterConfigData[] characters;

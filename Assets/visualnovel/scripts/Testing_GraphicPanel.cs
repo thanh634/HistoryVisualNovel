@@ -33,7 +33,7 @@ namespace TESTING
             GraphicPanel cinematic = GraphicPanelManager.instance.GetPanel("cinematic");
             GraphicLayer cinLayer = cinematic.GetLayer(0, true);
 
-            Character vua = CharacterManager.instance.CreateCharacter("Tran Nhan Tong", true);
+            VisualNovelCharater vua = CharacterManager.instance.CreateCharacter("Tran Nhan Tong", true);
 
             yield return vua.Say("Let's take a look at the picture on cinematic layer.");
 

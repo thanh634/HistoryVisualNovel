@@ -8,7 +8,7 @@ using static TreeEditor.TextureAtlas;
 
 namespace CHARACTER
 {
-    public class Character_Sprite : Character
+    public class Character_Sprite : VisualNovelCharater
     {
         private const string SPRITE_RENDERER_PARENT_NAME = "Renderers";
         private const string SPRITESHEET_DEFAULT_SHEETNAME = "Default";
@@ -31,7 +31,7 @@ namespace CHARACTER
             artAssetsDirectory = rootAssetFolder + "/Images";
             GetLayers();
 
-            Debug.Log($"Created Sprite Character: '{name}'");
+            Debug.Log($"Created Sprite VisualNovelCharater: '{name}'");
         }
 
         private void GetLayers()
@@ -84,7 +84,7 @@ namespace CHARACTER
                 }
 
                 if (spriteArray.Length == 0)
-                    Debug.LogWarning($"Character  '{name}' does not have a default art asset called '{SPRITESHEET_DEFAULT_SHEETNAME}'");
+                    Debug.LogWarning($"VisualNovelCharater  '{name}' does not have a default art asset called '{SPRITESHEET_DEFAULT_SHEETNAME}'");
 
                 return Array.Find(spriteArray, sprite => sprite.name == spriteName);
             }

@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace CHARACTER
 {
-    public class Character_Text : Character
+    public class Character_Text : VisualNovelCharater
     {
         public Character_Text(string name, CharacterConfigData config) : base(name, config, prefab : null) 
         {
-            Debug.Log($"Created Text Character: '{name}'");
+            Debug.Log($"Created Text VisualNovelCharater: '{name}'");
         }
     }
 

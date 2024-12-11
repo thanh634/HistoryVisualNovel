@@ -141,7 +141,7 @@ namespace DIALOGUE
         {
 
             bool charMustBeCreated = (speakerData.makeCharacterEnter || speakerData.isCastingPosition || speakerData.isCastingExpressions);
-            Character character = CharacterManager.instance.GetCharacter(speakerData.name, createIfDoesNotExist: charMustBeCreated);
+            VisualNovelCharater character = CharacterManager.instance.GetCharacter(speakerData.name, createIfDoesNotExist: charMustBeCreated);
 
             if (speakerData.makeCharacterEnter && (!character.isVisible && !character.isRevealing))
             {
